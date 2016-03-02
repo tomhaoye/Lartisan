@@ -1,6 +1,16 @@
 /vendor
 /node_modules
-/public/storage
 Homestead.yaml
 Homestead.json
 .env
+
+.DS_Store
+
+.idea
+_ide_helper.php
+_ide_helper_models.php
+.phpstorm.meta.php
+
+/public/build
+/public/js
+/public/css
