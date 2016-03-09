@@ -34,6 +34,7 @@ Route::group(['middleware' => ['web']], function () {
 Route::get('/users/{users}',function(App\User $users){
 	return $users;
 })->middleware('throttle:3');
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/home', 'HomeController@index');

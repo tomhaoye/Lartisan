@@ -28,6 +28,7 @@
 <body id="app-layout">
     <nav class="navbar navbar-default">
         <div class="container">
+
             <div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->
@@ -43,6 +44,7 @@
                     Laravel
                 </a>
             </div>
+
 
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
@@ -72,9 +74,15 @@
         </div>
     </nav>
 
+    <div class="col-md-10 col-md-offset-1">
+        <div class="panel-body">
+            @include('flash::message')
+        </div>
+    </div>
+
     @yield('content')
 
-    <!-- JavaScripts -->
+            <!-- JavaScripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}

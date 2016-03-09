@@ -24,6 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
+        flash()->message('welcome!');
         return view('home');
     }
 }
