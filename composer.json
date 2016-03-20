@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "laracasts/flash": "^1.3",
         "erusev/parsedown": "^1.6",
-        "barryvdh/laravel-ide-helper": "^2.1"
+        "barryvdh/laravel-ide-helper": "^2.1",
+        "workerman/workerman": "^3.3"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
