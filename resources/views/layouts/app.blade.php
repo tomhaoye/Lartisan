@@ -13,7 +13,7 @@
 
     <!-- Styles -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
+    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
 
     <style>
         body {
@@ -84,9 +84,9 @@
     @yield('content')
 
             <!-- JavaScripts -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    {{-- <script src="{{ elixir('js/app.js') }}"></script> --}}
+    <script src="{{ elixir('js/jquery.min.js') }}"></script>
+    <script src="{{ elixir('js/bootstrap.min.js') }}"></script>
+    <script src="{{ elixir('js/jquery.pjax.js') }}"></script>
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
