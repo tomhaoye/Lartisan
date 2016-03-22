@@ -11,18 +11,29 @@ var elixir = require('laravel-elixir');
  |
  */
 
+var files = {
+    scripts:[
+        'jquery.min.js',
+        'bootstrap.min.js',
+        'jquery.pjax.js'
+    ],
+    styles:[
+    ],
+    sass:[
+        'app.scss'
+    ]
+};
+
 //elixir.config.sourcemaps = false;
 
 elixir(function (mix) {
-    mix.sass('app.scss');
+    mix.sass(files.sass);
 });
 
 elixir(function (mix) {
-    mix.scripts(['bootstrap.min.js'],'public/js/bootstrap.min.js').
-        scripts(['jquery.min.js'],'public/js/jquery.min.js').
-        scripts(['jquery.pjax.js'],'public/js/jquery.pjax.js');
+    mix.scripts(files.scripts);
 });
 
 elixir(function(mix) {
-    mix.version(['css/app.css', 'js/*.js']);
+    mix.version(['css/app.css', 'js/all.js']);
 });

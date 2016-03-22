@@ -84,9 +84,7 @@
     @yield('content')
 
             <!-- JavaScripts -->
-    <script src="{{ elixir('js/jquery.min.js') }}"></script>
-    <script src="{{ elixir('js/bootstrap.min.js') }}"></script>
-    <script src="{{ elixir('js/jquery.pjax.js') }}"></script>
+    <script src="{{ elixir('js/all.js') }}"></script>
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
