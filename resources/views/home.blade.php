@@ -8,7 +8,9 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    You are logged in!
+                    <textarea name="message" id="message" cols="60" rows="10" disabled="disabled"></textarea>
+                    <textarea name="say" id="say" cols="60" rows="2" placeholder="here insert"></textarea>
+                    <button onclick="message.scrollTop=message.scrollHeight" id="send">send message</button>
                 </div>
             </div>
         </div>

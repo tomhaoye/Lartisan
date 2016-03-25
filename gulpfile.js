@@ -20,7 +20,7 @@ var files = {
     styles:[
     ],
     sass:[
-        'app.scss'
+        'app.sass'
     ]
 };
 
