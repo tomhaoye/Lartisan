@@ -13,8 +13,6 @@ $ws->on('open', function ($ws, $request) {
 $ws->on('message', function ($ws, $frame) {
     echo "Message: {$frame->data}\n";
     $ws->push($frame->fd, "{$frame->fd}said: {$frame->data}");
-    $ws->push($frame->fd+1, "{$frame->fd}said: {$frame->data}");
-
 });
 
 //监听WebSocket连接关闭事件
