@@ -10,7 +10,8 @@
         "laracasts/flash": "^1.3",
         "erusev/parsedown": "^1.6",
         "barryvdh/laravel-ide-helper": "^2.1",
-        "ryan/toastr-for-laravel": "^1.0"
+        "ryan/toastr-for-laravel": "^1.0",
+        "laravelista/ekko": "~1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
