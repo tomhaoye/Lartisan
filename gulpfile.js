@@ -13,21 +13,24 @@ var elixir = require('laravel-elixir');
 
 var files = {
     scripts:[
-        'jquery.min.js',
-        'bootstrap.min.js',
-        'jquery.pjax.js'
+        'lib/jquery.min.js',
+        'lib/bootstrap.min.js',
+        'lib/jquery.pjax.js',
+        'layouts/app.js'
     ],
     styles:[
+        'lib/bootstrap.min.css',
+        'lib/font-awesome.min.css',
+        'layouts/app.css'
     ],
     sass:[
-        'app.sass'
     ]
 };
 
 //elixir.config.sourcemaps = false;
 
 elixir(function (mix) {
-    mix.sass(files.sass);
+    mix.styles(files.styles);
 });
 
 elixir(function (mix) {
@@ -35,5 +38,5 @@ elixir(function (mix) {
 });
 
 elixir(function(mix) {
-    mix.version(['css/app.css', 'js/all.js']);
+    mix.version(['css/all.css', 'js/all.js']);
 });

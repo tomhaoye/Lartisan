@@ -7,24 +7,9 @@
 
     <title>Laravel</title>
 
-    <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
+    <link href="{{ elixir('css/all.css') }}" rel='stylesheet' type='text/css'>
 
-    <!-- Styles -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ elixir('css/app.css') }}" rel="stylesheet">
-
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-        .fa-btn {
-            margin-right: 6px;
-        }
-        textarea {
-            float: left;
-        }
-    </style>
+    <link href="{{ elixir('css/all.css') }}" rel="stylesheet">
 
 </head>
 <body id="app-layout">
@@ -86,33 +71,6 @@
 
             <!-- JavaScripts -->
     <script src="{{ elixir('js/all.js') }}"></script>
-
-    <script>
-        var wsServer = 'ws://192.168.43.134:9502';
-        var websocket = new WebSocket(wsServer);
-        websocket.onopen = function (evt) {
-            console.log("Connected to WebSocket server.");
-        };
-
-        websocket.onclose = function (evt) {
-            console.log("Disconnected");
-        };
-
-        websocket.onmessage = function (evt) {
-            console.log('Retrieved data from server: ' + evt.data);
-            $('#message').append("\n"+evt.data+'\n');
-        };
-
-        websocket.onerror = function (evt, e) {
-            console.log('Error occured: ' + evt.data);
-        };
-
-        $('#send').on('click', function () {
-            var say = $('#say').val();
-            websocket.send(say);
-        });
-
-    </script>
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
