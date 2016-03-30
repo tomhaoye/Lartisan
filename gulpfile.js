@@ -21,6 +21,7 @@ var files = {
     styles:[
         'lib/bootstrap.min.css',
         'lib/font-awesome.min.css',
+        'lib/animate.css',
         'layouts/app.css'
     ],
     sass:[

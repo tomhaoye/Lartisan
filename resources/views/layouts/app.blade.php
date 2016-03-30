@@ -27,15 +27,13 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand" href="{{ url('/') }}">
+                <a class="navbar-brand animated bounceInLeft" href="{{ url('/') }}">
                     Laravel
                 </a>
             </div>
-
-
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav animated fadeIn">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                 </ul>
 
