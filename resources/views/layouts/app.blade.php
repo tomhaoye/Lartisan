@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel</title>
+    <title>LaraMe</title>
 
     <link href="{{ elixir('css/all.css') }}" rel='stylesheet' type='text/css'>
-
     <link href="{{ elixir('css/all.css') }}" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
 
 </head>
 <body id="app-layout">
@@ -27,23 +28,20 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand animated bounceInLeft" href="{{ url('/') }}">
-                    Laravel
+                <a class="navbar-brand animated bounceInLeft p-jax" href="{{ url('/') }}">
+                    LaraMe
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav animated fadeIn">
-                    <li><a href="{{ url('/home') }}">Home</a></li>
+                    <li><a class="p-jax" href="{{ url('/home') }}">Home</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
-                    @if (Auth::guest())
-                        <li><a href="{{ url('/login') }}">Login</a></li>
-                        <li><a href="{{ url('/register') }}">Register</a></li>
-                    @else
+                    @if (Auth::check())
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
@@ -53,13 +51,17 @@
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
+                    @else
+                        <li><a class="p-jax" href="{{ url('/login') }}">Login</a></li>
+                        <li><a class="p-jax" href="{{ url('/register') }}">Register</a></li>
                     @endif
                 </ul>
             </div>
+
         </div>
     </nav>
 
-    <div class="col-md-10 col-md-offset-1">
+    <div class="col-md-11">
         <div class="panel-body">
             @include('flash::message')
         </div>
@@ -69,6 +71,7 @@
 
             <!-- JavaScripts -->
     <script src="{{ elixir('js/all.js') }}"></script>
+    <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 

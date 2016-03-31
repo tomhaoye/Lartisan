@@ -1,3 +1,15 @@
+$(document).ready(function()
+{
+    $(document).pjax('.p-jax', '#pjax-container');
+
+    $(document).on('pjax:start', function() {
+        NProgress.start();
+    });
+    $(document).on('pjax:end', function() {
+        NProgress.done();
+    });
+});
+
 var wsServer = 'ws://192.168.43.134:9502';
 var websocket = new WebSocket(wsServer);
 websocket.onopen = function (evt) {
