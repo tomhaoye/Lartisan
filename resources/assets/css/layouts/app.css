@@ -1,5 +1,6 @@
 body {
     font-family: 'Lato';
+    background: url("/image/bg5.jpg");
 }
 .fa-btn {
     margin-right: 6px;
