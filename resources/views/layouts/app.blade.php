@@ -14,7 +14,7 @@
 
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
 
             <div class="navbar-header">
@@ -28,7 +28,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand animated bounceInLeft p-jax" href="{{ url('/') }}">
+                <a class="navbar-brand animated bounceInLeft" href="{{ url('/') }}">
                     LaraMe
                 </a>
             </div>
@@ -59,6 +59,8 @@
             </div>
 
         </div>
+    </nav>
+    <nav class="navbar navbar-default top-bar">
     </nav>
 
     <div class="col-md-11">

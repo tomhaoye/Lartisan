@@ -10,6 +10,7 @@ $(document).ready(function()
     });
 });
 
+
 var wsServer = 'ws://192.168.43.134:9502';
 var websocket = new WebSocket(wsServer);
 websocket.onopen = function (evt) {

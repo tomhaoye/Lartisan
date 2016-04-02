@@ -1,0 +1,41 @@
+#cloud {
+    position: relative;
+    width: 400px;
+    height: 450px;
+    margin: 20px auto 0;
+}
+
+#cloud a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+#cloud a:hover {
+    border: 1px solid #eee;
+    background: #9f9f9f;
+}
+
+#fall{
+    height:250px;
+}
+.play{
+    cursor:pointer;
+    background-color:#060;
+}
+#fall>div{
+    display:block;
+    height:20px;
+}
+#fall>div>div{
+    width:16px;
+    height:16px;
+    background-color: #00b4ff;
+    display:inline-block;
+    float:right;
+    margin:2px;
+}
