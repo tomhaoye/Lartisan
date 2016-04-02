@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Topics;
 use Yuansir\Toastr\Facades\Toastr;
 
 class HomeController extends Controller
@@ -19,7 +20,8 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $topics = Topics::paginate(10);
         Toastr::info('welcome!');
-        return view('home');
+        return view('home',['topics'=>$topics]);
     }
 }

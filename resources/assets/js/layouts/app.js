@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-    $(document).pjax('.p-jax', '#pjax-container');
+    $(document).pjax('a', '#pjax-container');
 
     $(document).on('pjax:start', function() {
         NProgress.start();

@@ -28,7 +28,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand animated bounceInLeft" href="{{ url('/') }}">
+                <a class="navbar-brand animated bounceInLeft p-jax" href="{{ url('/') }}">
                     LaraMe
                 </a>
             </div>

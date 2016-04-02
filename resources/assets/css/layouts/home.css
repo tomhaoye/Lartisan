@@ -1,0 +1,18 @@
+.topic{
+    min-height: 180px;
+    margin-top: 20px;
+}
+
+.topic div{
+    overflow: hidden;
+}
+
+.topic-content{
+    border: 1px solid #dfdfdf;
+}
+
+.content{
+    height: 160px;
+    overflow: hidden;
+    color: #9a9a9a;
+}
