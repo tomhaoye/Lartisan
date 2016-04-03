@@ -1,8 +1,3 @@
-$(function(){
-    $('#cloud').tagCloud();
-});
-
-
 $(document).ready(function(){
     animate();
     $(".play").click(animate).mouseover(function(){
