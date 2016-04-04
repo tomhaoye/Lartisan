@@ -11,21 +11,22 @@
                     @foreach($topics as $topic)
                         <div class="col-xs-12 col-md-12 topic">
                             <div class="topic-content">
-                                <div class="col-md-9 content">
-                                    {{$topic->created_at}}
-                                    <h2>
+                                <div class="col-md-9">
+                                    <div class="date">
+                                        {{$topic->created_at}}
+                                    </div>
+                                    <h3>
                                         {{$topic->title}}
-                                    </h2>
-                                    <div>
+                                    </h3>
+                                    <div class="content">
                                         {{$topic->content}}
                                     </div>
-                                    <span>
-                                    {{$topic->sort()->getResults()->sort}}
-                                    </span>
+                                    <div class="sort">
+                                        {{$topic->sort()->getResults()->sort}}
+                                    </div>
                                 </div>
                                 <div class="col-md-3">
-                                    <img src="{{$topic->image}}"
-                                         height="180">
+                                    <img src="{{$topic->image}}" width="180">
                                 </div>
                             </div>
                         </div>
