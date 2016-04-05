@@ -1,6 +1,6 @@
 $(document).ready(function()
 {
-    $(document).pjax('a', '#pjax-container');
+    $(document).pjax('a:not(a[data-pjax="no-pjax"])', '#pjax-container');
 
     $(document).on('pjax:start', function() {
         NProgress.start();
@@ -11,6 +11,7 @@ $(document).ready(function()
 });
 
 
+/*
 var wsServer = 'ws://192.168.43.134:9502';
 var websocket = new WebSocket(wsServer);
 websocket.onopen = function (evt) {
@@ -33,4 +34,4 @@ websocket.onerror = function (evt, e) {
 $('#send').on('click', function () {
     var say = $('#say').val();
     websocket.send(say);
-});
+});*/

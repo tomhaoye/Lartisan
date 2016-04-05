@@ -28,7 +28,7 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand animated bounceInLeft p-jax" href="{{ url('/') }}">
+                <a class="navbar-brand animated bounceInLeft" data-pjax="no-pjax" href="{{ Auth::check()?url('/home'):url('/') }}">
                     LaraMe
                 </a>
             </div>
@@ -48,7 +48,7 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li><a data-pjax="no-pjax" href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
                     @else
@@ -62,12 +62,6 @@
     </nav>
     <nav class="navbar navbar-default top-bar">
     </nav>
-
-    <div class="col-md-11">
-        <div class="panel-body">
-            @include('flash::message')
-        </div>
-    </div>
 
     @yield('content')
 
