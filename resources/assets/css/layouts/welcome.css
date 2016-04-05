@@ -17,3 +17,27 @@
     float:right;
     margin:2px;
 }
+
+
+#cloud {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+}
+
+#cloud a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px 6px;
+}
+
+#cloud a:hover {
+    border: 1px solid #eee;
+    background: #9f9f9f;
+}

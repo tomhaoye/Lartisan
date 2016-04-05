@@ -3,12 +3,12 @@
 @section('content')
 <div class="container" id="pjax-container">
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 visible-lg">
             <div class="panel panel-default">
 
                 <div class="panel-body">
 
-                    <div id='fall' class="col-md-12 visible-lg">
+                    <div id='fall' class="col-md-12">
                         <div>
                         </div>
                         <div>
@@ -107,7 +107,7 @@
                             <div style="margin-right: 52px"></div>
                             <div style="margin-right: 80px"></div>
 
-                            <div style="margin-right: 150px"></div>
+                            <div style="margin-right: 148px"></div>
                         </div>
                         <div>
                             <div style="margin-right: 110px"></div>
@@ -177,6 +177,58 @@
                     </div>
 
                 </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3 hidden-lg">
+            <div id="cloud">
+                <a href="javascript:" style="color:red;">Laravel</a>
+                <a href="javascript:" style="color:red;">Symfony</a>
+                <a href="javascript:" style="color:red;">Nette</a>
+                <a href="javascript:" style="color:red;">Silex</a>
+                <a href="javascript:" style="color:red;">FuelPHP</a>
+                <a href="javascript:" style="color:red;">Slim</a>
+                <a href="javascript:" style="color:red;">Yii</a>
+                <a href="javascript:" style="color:red;">CI</a>
+                <a href="javascript:" style="color:red;">TP</a>
+                <a href="javascript:" style="color:red;">Lumen</a>
+
+                <a href="javascript:" style="color:blue;">Nginx</a>
+                <a href="javascript:" style="color:blue;">Apache</a>
+                <a href="javascript:" style="color:blue;">lighttpd</a>
+                <a href="javascript:" style="color:blue;">Linux</a>
+                <a href="javascript:" style="color:blue;">OSX</a>
+                <a href="javascript:" style="color:blue;">Memcache</a>
+                <a href="javascript:" style="color:blue;">redis</a>
+                <a href="javascript:" style="color:blue;">Mysql</a>
+                <a href="javascript:" style="color:blue;">Oracle</a>
+
+                <a href="javascript:" style="color:green;">svn</a>
+                <a href="javascript:" style="color:green;">git</a>
+                <a href="javascript:" style="color:green;">hg</a>
+                <a href="javascript:" style="color:green;">perforce</a>
+                <a href="javascript:" style="color:green;">github</a>
+                <a href="javascript:" style="color:green;">bitbucket</a>
+                <a href="javascript:" style="color:green;">gitlab</a>
+                <a href="javascript:" style="color:green;">coding</a>
+
+                <a href="javascript:" style="color:orange;">ecmascript</a>
+                <a href="javascript:" style="color:orange;">javascript</a>
+                <a href="javascript:" style="color:orange;">Jquery</a>
+                <a href="javascript:" style="color:orange;">Vue</a>
+                <a href="javascript:" style="color:orange;">Angular</a>
+                <a href="javascript:" style="color:orange;">moment</a>
+                <a href="javascript:" style="color:orange;">socket.io</a>
+                <a href="javascript:" style="color:orange;">nodejs</a>
+                <a href="javascript:" style="color:orange;">gulp</a>
+                <a href="javascript:" style="color:orange;">grunt</a>
+                <a href="javascript:" style="color:orange;">Bootstrap</a>
+                <a href="javascript:" style="color:orange;">animate</a>
+                <a href="javascript:" style="color:orange;">Backbone</a>
+                <a href="javascript:" style="color:orange;">Underscore</a>
+                <a href="javascript:" style="color:orange;">React</a>
+
             </div>
         </div>
     </div>
