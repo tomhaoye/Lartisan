@@ -1,3 +1,4 @@
 $(function(){
-    $('#cloud').tagCloud();
+    setTimeout(function(){
+        $('#cloud').tagCloud()},500);
 });

@@ -8,7 +8,7 @@
 
                 <div class="panel-body">
 
-                    <div id='fall' class="col-md-12">
+                    <div id='fall' class="col-md-12 visible-lg">
                         <div>
                         </div>
                         <div>
