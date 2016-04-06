@@ -167,9 +167,10 @@ $(document).ready(function() {
                         $('.clipped-box').css({'top' : '-1000px', 'transition' : 'none'});
                         $(self).css({'left' : '0', 'bottom' : '0', 'opacity' : '1', 'transition' : 'none', 'transform' : 'none'});
 
-
                         // Finally clear the interval
                         clearInterval(z);
+
+                        window.location = '/home';
 
                     }
 
