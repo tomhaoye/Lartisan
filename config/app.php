@@ -158,7 +158,6 @@ return [
 
         // Extend Providers
         Laracasts\Flash\FlashServiceProvider::class,
-        Zizaco\Entrust\EntrustServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Yuansir\Toastr\ToastrServiceProvider::class,
     ],
@@ -209,7 +208,6 @@ return [
 
         // extend
         'Flash'     => Laracasts\Flash\Flash::class,
-        'Entrust' => Zizaco\Entrust\EntrustFacade::class,
         'Toastr' => Yuansir\Toastr\Facades\Toastr::class,
     ],
 

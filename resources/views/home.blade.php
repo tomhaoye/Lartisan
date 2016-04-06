@@ -25,8 +25,14 @@
                                         {{$topic->sort()->getResults()->sort}}
                                     </div>
                                 </div>
-                                <div class="col-md-3 visible-md visible-lg">
-                                    <img src="{{$topic->image}}" width="180">
+                                <div class="topic-img col-md-3 visible-md visible-lg">
+                                    <div class="img-detail">
+                                        <div>
+                                            <img src="{{$topic->image}}" height="188">
+                                        </div>
+                                        <div class="detail">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

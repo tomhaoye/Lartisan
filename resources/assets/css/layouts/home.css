@@ -3,8 +3,23 @@
     margin-top: 20px;
 }
 
-.topic div{
+.topic>div{
     overflow: hidden;
+}
+
+.topic-img{
+    height: 188px;
+}
+.img-detail{
+    height: 188px;
+    border-left: 1px solid rgba(185, 185, 185, 0.51);
+}
+.detail{
+    height: 50px;
+    width: 180px;
+    background-color: rgba(0, 0, 17, 0.5);
+    position: absolute;
+    bottom: 0;
 }
 
 .topic-content{

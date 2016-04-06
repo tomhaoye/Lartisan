@@ -20,7 +20,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $topics = Topics::paginate(1);
+        $topics = Topics::paginate(10);
         Toastr::info('welcome!');
         return view('home',['topics'=>$topics]);
     }
