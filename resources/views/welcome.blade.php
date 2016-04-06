@@ -5,8 +5,8 @@
     <div class="row">
         <div class="col-md-12 hidden-lg clipped-box">
             <div class="content">
-                <h1>WELCOME TO MY EDEN</h1>
-                <p>what the hell!</p>
+                <h1>WELCOME TO LARAME</h1>
+                <h3>let's begin!</h3>
             </div>
         </div>
 

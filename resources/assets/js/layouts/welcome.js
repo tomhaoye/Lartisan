@@ -83,13 +83,13 @@ $(document).ready(function() {
         clicked = false;
 
     // On click
-    $('.guide-cover').on('click', function() {
+    $('.guide').on('click', function() {
 
         if(clicked === false) {
 
             clicked = true;
 
-            $(this).addClass('hidden');
+            $('.guide-cover').addClass('hidden');
 
             $('.clipped-box .content').css({'display' : 'none'});
 
@@ -100,7 +100,7 @@ $(document).ready(function() {
                 // But otherwise it seems too slow. That's due to how I handled the timeout.
                 var v = rand(120, 90),
                     angle = rand(80, 89), // The angle (the angle of projection) is a random number between 80 and 89 degrees.
-                    theta = (angle * Math.PI) / 180, // Theta is the angle in radians
+                    theta = (angle * Math.PI) / 120, // Theta is the angle in radians
                     g = -9.8; // And gravity is -9.8. If you live on another planet feel free to change
 
                 // $(this) as self
@@ -152,7 +152,7 @@ $(document).ready(function() {
                     ny = (uy * t) + (0.5 * (g) * Math.pow(t, 2));
 
                     // Apply the positions
-                    $(self).css({'bottom' : (ny)+'px', 'left' : (nx)+'px'});
+                    $(self).css({'top' : 'auto','bottom' : (ny)+'px', 'left' : (nx)+'px'});
 
                     // Increase the time by 0.10
                     t = t + 0.10;
