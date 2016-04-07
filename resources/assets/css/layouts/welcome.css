@@ -11,7 +11,7 @@
     z-index:-1;
     width: 30px;
     height: 30px;
-    background-color: #ea7372;
+    background-color: #FCA7A2;
 
     border-radius: 100%;
     display: inline-block;
@@ -60,9 +60,14 @@
     height:20px;
 }
 #fall>div>div{
+    position: relative;
+    opacity: 0;
     width:16px;
     height:16px;
-    background-color: #00b4ff;
+    background: -webkit-linear-gradient(left, #FAAF88, #FBC2A5); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #FAAF88, #FBC2A5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #FAAF88, #FBC2A5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #FAAF88, #FBC2A5); /* 标准的语法（必须放在最后） */
     display:inline-block;
     float:right;
     margin:2px;

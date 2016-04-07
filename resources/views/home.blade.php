@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-sm-9 col-md-9  animated bounceInUp">
             <div class="panel panel-default">
-                <div class="panel-heading">Great</div>
+                <div class="panel-heading">Topic list</div>
                 <div class="panel-body">
 
                     @foreach($topics as $topic)
@@ -16,7 +16,9 @@
                                         {{$topic->created_at}}
                                     </div>
                                     <h3>
-                                        {{$topic->title}}
+                                        <a href="{{url('/topic/'.$topic->id)}}">
+                                            {{$topic->title}}
+                                        </a>
                                     </h3>
                                     <div class="content">
                                         {{$topic->content}}
@@ -48,10 +50,8 @@
         </div>
 
         <div class="col-sm-3 col-md-3">
-            <a class="thumbnail loaded" href="http://www.applandr.com/"
-               onclick="_hmt.push(['_trackEvent', 'imagelink', 'click', 'AppLandr'])" target="_blank">
-                <img src="image/bg3.jpg" width="700"
-                     height="438" alt="AppLandr">
+            <a class="thumbnail loaded" href="http://www.applandr.com/" target="_blank">
+                <img src="image/bg3.jpg" width="700" height="438">
             </a>
         </div>
 

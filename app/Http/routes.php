@@ -22,10 +22,6 @@
 |
 */
 
-Route::group(['middleware' => ['web']], function () {
-    //
-});
-
 
 Route::get('/users/{users}',function(App\User $users){
 	return $users;
@@ -37,4 +33,6 @@ Route::group(['middleware' => 'web'], function () {
     Route::get('/', function () {
         return view('welcome');
     });
+
+    Route::resource('topic','TopicsController');
 });

@@ -10,7 +10,6 @@ class HomeController extends Controller
 
     public function __construct()
     {
-        $this->middleware('auth');
     }
 
     /**
@@ -20,8 +19,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $topics = Topics::paginate(10);
+        $topics = Topics::orderBy('id','desc')->paginate(10);
         Toastr::info('welcome!');
-        return view('home',['topics'=>$topics]);
+        return view('home',compact('topics'));
     }
 }

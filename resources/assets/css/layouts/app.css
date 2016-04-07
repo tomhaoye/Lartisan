@@ -13,3 +13,13 @@ textarea {
     background: url("/image/top.jpg") bottom repeat-x;
 }
 
+a{
+    color: #fd7d70;
+}
+a:hover{
+    color: #fdac48;
+    text-decoration: none;
+}
+a:visited{
+    color: #ffcaca;
+}

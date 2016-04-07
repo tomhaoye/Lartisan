@@ -20,7 +20,13 @@ class TopicsController extends Controller
     public function index()
     {
         $topics = Topics::paginate(10);
-        return view('home',['topics'=>$topics]);
+        return view('home',compact('topics'));
+    }
+
+    public function show($id)
+    {
+        $topic = Topics::findOrfail($id);
+        return view('topics.show',compact('topic'));
     }
 
     public function create()
