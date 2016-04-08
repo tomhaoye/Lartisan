@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topics;
-
 use App\Http\Requests;
+use \Parsedown;
+use \Request;
+use \Auth;
 
 class TopicsController extends Controller
 {
@@ -22,7 +24,7 @@ class TopicsController extends Controller
         return view('home',compact('topics'));
     }
 
-    public function show($id,\Parsedown $markdown)
+    public function show($id,Parsedown $markdown)
     {
         $topic = Topics::findOrfail($id);
         $topic->content = $markdown->text($topic->content);
@@ -34,7 +36,7 @@ class TopicsController extends Controller
 
     }
 
-    public function store(\Request $request,\Auth $auth)
+    public function store(Request $request,Auth $auth)
     {
         $data = $request->only(array('title','content','type_id','sort_id'));
         $data['user_id'] = $auth->user()->id;

@@ -1,0 +1,30 @@
+.title-header{
+    position: relative;
+    padding: 20px 0;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+.topic-ins-content{
+    padding: 30px 0;
+}
+
+.comment-body{
+    height: auto;
+    padding: 20px 15px;
+    border-bottom: 1px solid #dfdfdf;
+}
+
+
+textarea{
+    word-wrap: break-word;
+    border-color: #dfdfdf;
+    border-radius: 4px;
+    padding: 10px 0;
+    height: 120px;
+    margin-bottom: 20px;
+}
+
+.form-top{
+    height: auto;
+    margin-bottom: 20px;
+}

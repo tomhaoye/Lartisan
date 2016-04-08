@@ -17,13 +17,15 @@ var files = {
         'lib/bootstrap.min.js',
         'lib/jquery.pjax.js',
         'lib/jquery.rotate.min.js',
-        'layouts'
+        'layouts',
+        'topics'
     ],
     styles:[
         'lib/bootstrap.min.css',
         'lib/font-awesome.min.css',
         'lib/animate.css',
-        'layouts'
+        'layouts',
+        'topics'
     ],
     sass:[
     ]

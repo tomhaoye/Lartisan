@@ -23,7 +23,7 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
 $factory->define(App\Models\Topics::class, function (Faker\Generator $faker) {
     return [
         'title' => $faker->title,
-        'content' => $faker->paragraph,
+        'content' => $faker->text,
         'user_id' => 1,
         'type_id' => 1,
         'sort_id' => 1,

@@ -65,9 +65,39 @@
 
     @yield('content')
 
+
+    <div class="up-down">
+        <ul class="nav nav-pills">
+            <li role="presentation" class="dropup">
+                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    GO <i class="glyphicon glyphicon-eject"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#">
+                           Go To Top
+                        </a>
+                    </li>
+                    <li class="divider">
+                    </li>
+                    <li>
+                        <a href="#footer">
+                            Go To Bottom
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+        </div>
+    </footer>
             <!-- JavaScripts -->
     <script src="{{ elixir('js/all.js') }}"></script>
     <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+    <script type="text/javascript" src="//github.atool.org/canvas-nest.min.js"></script>
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
