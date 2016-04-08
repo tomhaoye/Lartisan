@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topics;
-use Illuminate\Http\Request;
 
 use App\Http\Requests;
 
@@ -23,9 +22,10 @@ class TopicsController extends Controller
         return view('home',compact('topics'));
     }
 
-    public function show($id)
+    public function show($id,\Parsedown $markdown)
     {
         $topic = Topics::findOrfail($id);
+        $topic->content = $markdown->text($topic->content);
         return view('topics.show',compact('topic'));
     }
 
@@ -34,9 +34,10 @@ class TopicsController extends Controller
 
     }
 
-    public function store()
+    public function store(\Request $request,\Auth $auth)
     {
-
+        $data = $request->only(array('title','content','type_id','sort_id'));
+        $data['user_id'] = $auth->user()->id;
     }
 
     public function edit($id)

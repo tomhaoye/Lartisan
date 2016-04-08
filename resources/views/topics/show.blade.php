@@ -23,7 +23,7 @@
                                             {{$topic->created_at}}
                                         </div>
                                         <div>
-                                            {{$topic->content}}
+                                            {!!$topic->content!!}
                                         </div>
                                     </div>
                                 </div>
