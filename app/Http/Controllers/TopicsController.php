@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topics;
-use App\Http\Requests;
 use \Parsedown;
 use \Request;
 use \Auth;
