@@ -37,8 +37,8 @@ class TopicsController extends Controller
 
     public function store(Request $request,Auth $auth)
     {
-        $data = $request->only(array('title','content','type_id','sort_id'));
-        $data['user_id'] = $auth->user()->id;
+//        $data = $request->only(array('title','content','type_id','sort_id'));
+//        $data['user_id'] = $auth->user()->id;
     }
 
     public function edit($id)
