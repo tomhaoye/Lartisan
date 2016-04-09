@@ -97,6 +97,7 @@
             <!-- JavaScripts -->
     <script src="{{ elixir('js/all.js') }}"></script>
     <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+    <script type="text/javascript" src="//github.atool.org/canvas-nest.min.js"></script>
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
