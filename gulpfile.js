@@ -17,6 +17,7 @@ var files = {
         'lib/bootstrap.min.js',
         'lib/jquery.pjax.js',
         'lib/jquery.rotate.min.js',
+        'lib/canvas-nest.min.js',
         'layouts',
         'topics'
     ],
