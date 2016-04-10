@@ -4,7 +4,7 @@
     <div class="container" id="pjax-container">
         <div class="row">
 
-            <div class="col-sm-12 col-md-10  animated slideInUp">
+            <div class="col-sm-12 col-md-10  animated fadeIn">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a href={{URL::previous()}}>
@@ -12,23 +12,17 @@
                         </a>
                     </div>
                     <div class="panel-body">
-
-                            <div class="col-lg-12 col-md-12">
-                                <div class="">
-                                    <div class="col-md-12">
-                                        <div class="title-header">
-                                            <blockquote>
-                                                <h1>{{$topic->title}}.</h1>
-                                                <small>Publish On {{$topic->created_at}}</small>
-                                            </blockquote>
-                                        </div>
-                                        <div class="topic-ins-content">
-                                            {!!$topic->content!!}
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="">
+                            <div class="title-header">
+                                <blockquote>
+                                    <h1>{{$topic->title}}.</h1>
+                                    <small>Publish On {{$topic->created_at}}</small>
+                                </blockquote>
                             </div>
-
+                            <div class="topic-ins-content">
+                                {!!$topic->content!!}
+                            </div>
+                        </div>
                     </div>
                 </div>
 

@@ -189,7 +189,7 @@
             </div>
         </div>
 
-        <div id="loading" class="col-md-12">
+        <div id="loading" class="col-md-12 hidden-lg">
             <div class="spinner">
                 <div class="bounce1"></div>
                   

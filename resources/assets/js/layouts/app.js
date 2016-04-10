@@ -11,6 +11,16 @@ $(document).ready(function()
 });
 
 
+$(".J_backtop").on('click', function(event) {
+    event.preventDefault();
+
+    $("html, body").animate({
+        scrollTop: 0
+    }, 300);
+});
+
+
+
 /*
 var wsServer = 'ws://192.168.43.134:9502';
 var websocket = new WebSocket(wsServer);

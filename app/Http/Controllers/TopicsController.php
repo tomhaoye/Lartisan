@@ -32,7 +32,7 @@ class TopicsController extends Controller
 
     public function create()
     {
-
+        return view('topics.create');
     }
 
     public function store(Request $request,Auth $auth)
