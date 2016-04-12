@@ -3,6 +3,12 @@ body {
     line-height: 150%;
     -webkit-font-smoothing: antialiased;
 }
+#navbar a{
+    color: #ffcaca;
+}
+#navbar:hover{
+
+}
 .fa-btn {
     margin-right: 6px;
 }
@@ -26,12 +32,6 @@ a:visited{
 }
 
 footer{
-    margin-top: 50px;
-}
-
-.footer-container{
-    height: 80px;
-    background-color: rgba(253, 125, 112, 0.55);
 }
 
 .up-down{

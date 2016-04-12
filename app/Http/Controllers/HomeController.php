@@ -19,8 +19,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $topics = Topics::orderBy('id','desc')->paginate(10);
-        Toastr::info('welcome!');
+        $topics = Topics::orderBy('id','desc')->paginate(12);
+        foreach($topics as $topic){
+            $topic->content = left($topic->content,100);
+        }
+//        Toastr::info('welcome!');
         return view('home',compact('topics'));
     }
+
+
 }

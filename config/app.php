@@ -159,6 +159,8 @@ return [
         // Extend Providers
         Laracasts\Flash\FlashServiceProvider::class,
         Yuansir\Toastr\ToastrServiceProvider::class,
+        Mews\Purifier\PurifierServiceProvider::class,
+
     ],
 
     /*
@@ -208,6 +210,7 @@ return [
         // extend
         'Flash'     => Laracasts\Flash\Flash::class,
         'Toastr' => Yuansir\Toastr\Facades\Toastr::class,
+        'Purifier'  => Mews\Purifier\Facades\Purifier::class,
     ],
 
 ];

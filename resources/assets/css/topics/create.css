@@ -1,17 +1,13 @@
-.create_topic div{
-    padding-bottom: 20px;
-}
-
 .create_content{
-    height: 380px;
+    height: 350px;
     line-height: 150%;
     font-size: larger;
 }
 
 .markdown_content{
-    height: 380px;
+    height: 350px;
     border: 1px dotted #dfdfdf;
     border-radius: 5px;
     overflow: scroll;
-    background-color: rgba(253, 125, 112, 0.17);
+    background-color: rgba(253, 125, 112, 0.07);
 }

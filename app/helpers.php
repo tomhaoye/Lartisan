@@ -1,43 +1,46 @@
 <?php
 
-function is_mobile()
+function left($str, $len, $charset="utf-8")
 {
-    $_SERVER['ALL_HTTP'] = isset($_SERVER['ALL_HTTP']) ? $_SERVER['ALL_HTTP'] : '';
-    $mobile_browser = '0';
-    if(!isset($_SERVER['HTTP_USER_AGENT']))
-        $_SERVER['HTTP_USER_AGENT'] = 'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.130 Safari/537.36';
-    if(preg_match('/(up.browser|up.link|mmp|symbian|smartphone|midp|wap|phone|iphone|ipad|ipod|android|xoom)/i', strtolower($_SERVER['HTTP_USER_AGENT'])))
-        $mobile_browser++;
-    if((isset($_SERVER['HTTP_ACCEPT'])) and (strpos(strtolower($_SERVER['HTTP_ACCEPT']),'application/vnd.wap.xhtml+xml') !== false))
-        $mobile_browser++;
-    if(isset($_SERVER['HTTP_X_WAP_PROFILE']))
-        $mobile_browser++;
-    if(isset($_SERVER['HTTP_PROFILE']))
-        $mobile_browser++;
+    //如果截取长度小于等于0，则返回空
+    if( !is_numeric($len) or $len <= 0 )
+    {
+        return "";
+    }
 
-    $mobile_ua = strtolower(substr($_SERVER['HTTP_USER_AGENT'],0,4));
-    $mobile_agents = array(
-        'w3c ','acs-','alav','alca','amoi','audi','avan','benq','bird','blac',
-        'blaz','brew','cell','cldc','cmd-','dang','doco','eric','hipt','inno',
-        'ipaq','java','jigs','kddi','keji','leno','lg-c','lg-d','lg-g','lge-',
-        'maui','maxo','midp','mits','mmef','mobi','mot-','moto','mwbp','nec-',
-        'newt','noki','oper','palm','pana','pant','phil','play','port','prox',
-        'qwap','sage','sams','sany','sch-','sec-','send','seri','sgh-','shar',
-        'sie-','siem','smal','smar','sony','sph-','symb','t-mo','teli','tim-',
-        'tosh','tsm-','upg1','upsi','vk-v','voda','wap-','wapa','wapi','wapp',
-        'wapr','webc','winw','winw','xda','xda-'
-    );
-    if(in_array($mobile_ua, $mobile_agents))
-        $mobile_browser++;
+    //如果截取长度大于总字符串长度，则直接返回当前字符串
+    $sLen = strlen($str);
+    if( $len >= $sLen )
+    {
+        return $str;
+    }
 
-    if(strpos(strtolower($_SERVER['ALL_HTTP']), 'operamini') !== false)
-        $mobile_browser++;
-    // Pre-final check to reset everything if the user is on Windows
-    if(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows') !== false)
-        $mobile_browser=0;
-    // But WP7 is also Windows, with a slightly different characteristic
-    if(strpos(strtolower($_SERVER['HTTP_USER_AGENT']), 'windows phone') !== false)
-        $mobile_browser++;
-    // 返回值大于0为手机，否则为pc
-    return $mobile_browser;
+    //判断使用什么编码，默认为utf-8
+    if ( strtolower($charset) == "utf-8" )
+    {
+        $len_step = 3; //如果是utf-8编码，则中文字符长度为3
+    }else{
+        $len_step = 2; //如果是gb2312或big5编码，则中文字符长度为2
+    }
+
+    //执行截取操作
+    $len_i = 0;
+    //初始化计数当前已截取的字符串个数，此值为字符串的个数值（非字节数）
+    $substr_len = 0; //初始化应该要截取的总字节数
+
+    for( $i=0; $i < $sLen; $i++ )
+    {
+        if ( $len_i >= $len ) break; //总截取$len个字符串后，停止循环
+        //判断，如果是中文字符串，则当前总字节数加上相应编码的中文字符长度
+        if( ord(substr($str,$i,1)) > 0xa0 )
+        {
+            $i += $len_step - 1;
+            $substr_len += $len_step;
+        }else{ //否则，为英文字符，加1个字节
+            $substr_len ++;
+        }
+        $len_i ++;
+    }
+    $result_str = substr($str,0,$substr_len );
+    return $result_str;
 }

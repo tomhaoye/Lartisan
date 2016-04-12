@@ -7,7 +7,7 @@
             <div class="col-sm-12 col-md-10  animated fadeIn">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <a href={{URL::previous()}}>
+                        <a class="hvr-icon-back" href={{URL::previous()}}>
                             返回
                         </a>
                     </div>

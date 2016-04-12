@@ -13,7 +13,7 @@
 
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
         <div class="container">
 
             <div class="navbar-header">
@@ -34,7 +34,7 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav animated fadeIn">
-                    <li><a class="p-jax" href="{{ url('/home') }}">Home</a></li>
+                    <li><a data-pjax="no-pjax" href="{{ url('/home') }}">Home</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -90,15 +90,10 @@
     </div>
 
     <footer id="footer" class="footer">
-        <div class="footer-container">
-        </div>
     </footer>
             <!-- JavaScripts -->
     <script src="{{ elixir('js/all.js') }}"></script>
     <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
-    @if(!is_mobile())
-    <script type="text/javascript" src="//github.atool.org/canvas-nest.min.js"></script>
-    @endif
 
     <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
