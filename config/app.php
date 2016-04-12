@@ -158,7 +158,6 @@ return [
 
         // Extend Providers
         Laracasts\Flash\FlashServiceProvider::class,
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Yuansir\Toastr\ToastrServiceProvider::class,
     ],
 

@@ -1,5 +1,6 @@
-var elixir = require('laravel-elixir');
-
+var elixir = require('laravel-elixir'),
+    clean = require("gulp-clean"),
+    gulpCopy = require('gulp-copy');
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management
