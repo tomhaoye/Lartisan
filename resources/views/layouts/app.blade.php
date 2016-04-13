@@ -47,7 +47,8 @@
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a data-pjax="no-pjax" href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
+                                <li><a data-pjax="no-pjax" href="{{ route('users.show',Auth::id()) }}"><i class="fa fa-btn fa-gears"></i>Setting</a></li>
+                                <li><a data-pjax="no-pjax" href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>SignOut</a></li>
                             </ul>
                         </li>
                     @else
@@ -65,7 +66,7 @@
     @yield('content')
 
 
-    <div class="up-down">
+    <div id="up_down">
         <ul class="nav nav-pills">
             <li role="presentation" class="dropup">
                 <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">

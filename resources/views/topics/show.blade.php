@@ -49,7 +49,8 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">would you like to say something?</h4>
+                                <h4 class="media-heading">jeffrey way</h4>
+                                would you like to say something?
                             </div>
                         </div>
                     </div>
@@ -61,7 +62,9 @@
                                 </a>
                             </div>
                             <div class="media-body">
-                                <h4 class="media-heading">i want to eat something...</h4>
+                                <h4 class="media-heading">geekeek</h4>
+                                <!-- todo get the @ user id-->
+                                 <a href="{{route('users.show',1)}}">@jeffrey way</a> i want to eat something...
                             </div>
                         </div>
                     </div>

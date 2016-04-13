@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use App\Models\Topics;
 use App\Models\TopicsSort;
 use App\Models\TopicsType;
-use Illuminate\Support\Facades\Redirect;
 use \Parsedown;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;

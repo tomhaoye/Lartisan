@@ -19,7 +19,21 @@ $(".J_backtop").on('click', function(event) {
     }, 300);
 });
 
-
+$(document).ready(function(){
+    var top = 300;
+    $("#up_down").hide();
+    $(function () {
+        $(window).scroll(function(){
+            if ($(window).scrollTop()>top){
+                $("#up_down").fadeIn(500);
+            }
+            else
+            {
+                $("#up_down").fadeOut(500);
+            }
+        });
+    });
+});
 
 /*
 var wsServer = 'ws://192.168.43.134:9502';

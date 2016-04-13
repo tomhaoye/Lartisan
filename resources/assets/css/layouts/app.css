@@ -3,11 +3,14 @@ body {
     line-height: 150%;
     -webkit-font-smoothing: antialiased;
 }
+#navbar {
+    background-color: #ffffff;
+}
 #navbar a{
-    color: #ffcaca;
+    color: #695669;
 }
 #navbar:hover{
-
+    background-color: #ffffff;
 }
 .fa-btn {
     margin-right: 6px;
@@ -34,7 +37,7 @@ a:visited{
 footer{
 }
 
-.up-down{
+#up_down{
     position: fixed;
     bottom: 15%;
     right:12%;

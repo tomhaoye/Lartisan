@@ -44,4 +44,5 @@ Route::group(['middleware' => 'web'], function () {
     });
 
     Route::resource('topic','TopicsController');
+    Route::resource('users','UsersController');
 });

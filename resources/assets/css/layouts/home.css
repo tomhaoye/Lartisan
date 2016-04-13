@@ -37,3 +37,6 @@
 .sort{
     padding-bottom: 10px;
 }
+.right-side{
+    overflow: hidden;
+}
