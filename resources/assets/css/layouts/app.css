@@ -2,6 +2,8 @@ body {
     font-family: 'Lato';
     line-height: 150%;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
 }
 #navbar {
     background-color: #ffffff;
@@ -18,10 +20,6 @@ body {
 textarea {
     float: left;
 }
-.top-bar{
-    min-height: 60px;
-    background: url("/image/top.jpg") bottom repeat-x;
-}
 
 a{
     color: #fd7d70;
@@ -29,9 +27,6 @@ a{
 a:hover{
     color: #fdac48;
     text-decoration: none;
-}
-a:visited{
-    color: #ffcaca;
 }
 
 footer{
@@ -41,4 +36,37 @@ footer{
     position: fixed;
     bottom: 15%;
     right:12%;
+}
+
+/*slideout*/
+.slideout-menu {
+    color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 300px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.slideout-panel {
+    position:relative;
+    z-index: 1;
+    background-color: #ffffff;
+    will-change: transform;
+}
+
+.slideout-open,
+.slideout-open body,
+.slideout-open .slideout-panel {
+    overflow: hidden;
+}
+
+.slideout-open .slideout-menu {
+    display: block;
 }

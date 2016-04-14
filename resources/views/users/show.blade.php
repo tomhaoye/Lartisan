@@ -4,37 +4,35 @@
     <div class="container" id="pjax-container">
         <div class="row">
 
-
-            <div class="col-lg-3">
-                <div class="panel panel-default">
+            <div class="col-lg-8">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        what have you done here
+                    </div>
                     <div class="panel-body">
 
-                        <div class="col-sm-12 col-md-12">
-                            <div class="thumbnail">
-                                <div class="caption">
-                                    <h3>Thumbnail label</h3>
-                                    <p>lo append </p>
-                                    <p><a href="#" class="btn btn-primary" role="button">Button</a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        how long have you been here
+                    </div>
+                    <div class="panel-body">
 
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-9">
+            <div class="col-lg-4">
                 <div class="panel panel-default">
-                    <div class="panel-body">
-                        a
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-9">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        a
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-info">
+                            there are something here
+                        </a>
+                        <a href="#" class="list-group-item">account</a>
+                        <a href="#" class="list-group-item">topics</a>
+                        <a href="#" class="list-group-item">something</a>
+                        <a href="#" class="list-group-item">awesome</a>
                     </div>
                 </div>
             </div>

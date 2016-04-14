@@ -13,13 +13,16 @@
 
 </head>
 <body id="app-layout">
-    <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+
+<div id="main_panel">
+    <nav class="navbar navbar-default" id="navbar">
         <div class="container">
 
             <div class="navbar-header">
 
                 <!-- Collapsed Hamburger -->
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#app-navbar-collapse">
                     <span class="sr-only">Toggle Navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -27,7 +30,8 @@
                 </button>
 
                 <!-- Branding Image -->
-                <a class="navbar-brand animated bounceInLeft" data-pjax="no-pjax" href="{{ Auth::check()?url('/home'):url('/') }}">
+                <a class="navbar-brand animated bounceInLeft toggle-button" data-pjax="no-pjax"
+                   href="#">
                     LaraMe
                 </a>
             </div>
@@ -42,13 +46,17 @@
                     <!-- Authentication Links -->
                     @if (Auth::check())
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                               aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
                             <ul class="dropdown-menu" role="menu">
-                                <li><a data-pjax="no-pjax" href="{{ route('users.show',Auth::id()) }}"><i class="fa fa-btn fa-gears"></i>Setting</a></li>
-                                <li><a data-pjax="no-pjax" href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>SignOut</a></li>
+                                <li><a href="{{ route('users.show',Auth::id()) }}"><i class="fa fa-btn fa-gears"></i>Setting</a>
+                                </li>
+                                <li><a data-pjax="no-pjax" href="{{ url('/logout') }}"><i
+                                                class="fa fa-btn fa-sign-out"></i>SignOut</a></li>
                             </ul>
                         </li>
                     @else
@@ -60,8 +68,6 @@
 
         </div>
     </nav>
-    <nav class="navbar navbar-default top-bar">
-    </nav>
 
     @yield('content')
 
@@ -69,13 +75,14 @@
     <div id="up_down">
         <ul class="nav nav-pills">
             <li role="presentation" class="dropup">
-                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                        aria-haspopup="true" aria-expanded="false">
                     GO <i class="glyphicon glyphicon-eject"></i>
                 </button>
                 <ul class="dropdown-menu">
                     <li>
                         <a href="#top" class="J_backtop">
-                           Go To Top
+                            Go To Top
                         </a>
                     </li>
                     <li class="divider">
@@ -92,11 +99,34 @@
 
     <footer id="footer" class="footer">
     </footer>
-            <!-- JavaScripts -->
-    <script src="{{ elixir('js/all.js') }}"></script>
-    <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+</div>
 
-    <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
+
+<nav id="menu" class="animated slideInLeft">
+    <div>
+        just a bit
+    </div>
+</nav>
+
+<!-- JavaScripts -->
+<script src="{{ elixir('js/all.js') }}"></script>
+<script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
+<script src="http://cdn.bootcss.com/slideout/0.1.12/slideout.min.js"></script>
+<script>
+    var slideout = new Slideout({
+        'panel': document.getElementById('main_panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 300,
+        'tolerance': 70
+    });
+
+    // Toggle button
+    document.querySelector('.toggle-button').addEventListener('click', function () {
+        slideout.toggle();
+    });
+</script>
+
+<div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
 </body>
 </html>
