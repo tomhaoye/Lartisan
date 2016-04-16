@@ -29,17 +29,20 @@
                         </div>
                         <div class="form-group col-lg-6 col-sm-12 col-xs-12">
                             <label for="content">content</label>
-                            <textarea class="col-lg-12 col-sm-12 col-xs-12 create_content" name="content" id="create_content"></textarea>
+                            <textarea class="col-lg-12 col-sm-12 col-xs-12 create_content" name="content"
+                                      id="create_content"></textarea>
                         </div>
                         <div class="form-group col-lg-6 col-sm-12 col-xs-12">
                             <label for="parse">parse</label>
+
                             <div class="markdown_content" id="markdown_content">
                             </div>
                         </div>
                         <div class="form-group col-lg-12 col-sm-12 col-xs-12">
                             <div class="col-lg-6">
                                 <button class="btn btn-info" onclick="return false;">upload image</button>
-                                <input  style="opacity: 0;position: absolute;height: 34px;bottom: 0px" type="file" name="image" id="image">
+                                <input style="opacity: 0;position: absolute;cursor: hand;width: 122px;height: 34px;bottom: 0"
+                                       type="file" name="image" id="image">
                             </div>
                             <div class="col-lg-6">
                                 <input class="btn btn-default" type="submit" value="submit">

@@ -14,7 +14,7 @@
 </head>
 <body id="app-layout">
 
-<div id="main_panel">
+<main id="main_panel">
     <nav class="navbar navbar-default" id="navbar">
         <div class="container">
 
@@ -71,41 +71,68 @@
 
     @yield('content')
 
-
-    <div id="up_down">
-        <ul class="nav nav-pills">
-            <li role="presentation" class="dropup">
-                <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                        aria-haspopup="true" aria-expanded="false">
-                    GO <i class="glyphicon glyphicon-eject"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li>
-                        <a href="#top" class="J_backtop">
-                            Go To Top
-                        </a>
-                    </li>
-                    <li class="divider">
-                    </li>
-                    <li>
-                        <a href="#footer" class="J_backbottom">
-                            Go To Bottom
-                        </a>
-                    </li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-
     <footer id="footer" class="footer">
     </footer>
+</main>
+
+<div id="up_down">
+    <ul class="nav nav-pills">
+        <li role="presentation" class="dropup">
+            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">
+                GO <i class="glyphicon glyphicon-eject"></i>
+            </button>
+            <ul class="dropdown-menu">
+                <li>
+                    <a href="#top" class="J_backtop">
+                        Go To Top
+                    </a>
+                </li>
+                <li class="divider">
+                </li>
+                <li>
+                    <a href="#footer" class="J_backbottom">
+                        Go To Bottom
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
 </div>
 
+<nav id="menu" class="">
+    <a href="https://github.com/tomhaoye/larame" target="_blank">
+        <header class="menu-header">
+            <span class="menu-header-title">Notifications</span>
+        </header>
+    </a>
 
-<nav id="menu" class="animated slideInLeft">
-    <div>
-        just a bit
-    </div>
+    <section class="menu-section">
+        <h3 class="menu-section-title">Docs</h3>
+        <ul class="menu-section-list">
+            <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
+            <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
+            <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
+            <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
+        </ul>
+    </section>
+
+    <section class="menu-section">
+        <h3 class="menu-section-title">Slideout</h3>
+        <ul class="menu-section-list">
+            <li><a href="https://github.com/mango/slideout" target="_blank">Fork it</a></li>
+            <li><a href="https://github.com/mango/slideout/issues/new" target="_blank">Create an issue</a></li>
+            <li><a href="https://github.com/mango/slideout/releases/">Download</a></li>
+        </ul>
+    </section>
+
+    <section class="menu-section">
+        <h3 class="menu-section-title">Mango</h3>
+        <ul class="menu-section-list">
+            <li><a href="https://getmango.com" target="_blank">About Mango</a></li>
+            <li><a href="https://twitter.com/getmango" target="_blank">Follow Us</a></li>
+        </ul>
+    </section>
 </nav>
 
 <!-- JavaScripts -->

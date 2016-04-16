@@ -29,10 +29,11 @@ a:hover{
     text-decoration: none;
 }
 
-footer{
+#main_panel{
+    min-height: 100%;
 }
-
 #up_down{
+    z-index: 9999;
     position: fixed;
     bottom: 15%;
     right:12%;

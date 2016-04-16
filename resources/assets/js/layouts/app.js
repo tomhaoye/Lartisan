@@ -8,15 +8,9 @@ $(document).ready(function()
     $(document).on('pjax:end', function() {
         NProgress.done();
     });
-});
 
-
-$(".J_backtop").on('click', function(event) {
-    event.preventDefault();
-
-    $("html, body").animate({
-        scrollTop: 0
-    }, 300);
+    var height = $(window).height();
+    $('#main_panel').css({'min-height':height});
 });
 
 $(document).ready(function(){
@@ -33,6 +27,15 @@ $(document).ready(function(){
             }
         });
     });
+});
+
+
+$(".J_backtop").on('click', function(event) {
+    event.preventDefault();
+
+    $("html, body").animate({
+        scrollTop: 0
+    }, 300);
 });
 
 
