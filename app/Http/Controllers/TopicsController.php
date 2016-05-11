@@ -53,7 +53,10 @@ class TopicsController extends Controller
 
     public function edit($id)
     {
-
+        $topic = Topics::findOrfail($id);
+        $sort = TopicsSort::all();
+        $type = TopicsType::all();
+        return view('topics.edit',compact('topic','type','sort'));
     }
 
     public function update($id)

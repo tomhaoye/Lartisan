@@ -79,7 +79,7 @@
             </div>
 
             <div class="col-sm-3 col-md-3">
-                <a class="col-lg-12 btn btn-success thumbnail right-side" href="{{route('topic.create')}}">create a new topic now</a>
+                <a class="col-lg-12 btn btn-success thumbnail right-side" data-pjax="no-pjax" href="{{route('topic.create')}}">create a new topic now</a>
             </div>
 
             <div class="col-sm-3 col-md-3">

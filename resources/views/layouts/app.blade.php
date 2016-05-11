@@ -103,34 +103,19 @@
 <nav id="menu" class="">
     <a href="https://github.com/tomhaoye/larame" target="_blank">
         <header class="menu-header">
-            <span class="menu-header-title">Notifications</span>
+            <span class="menu-header-title">
+                Notifications
+            </span>
         </header>
     </a>
 
     <section class="menu-section">
         <h3 class="menu-section-title">Docs</h3>
         <ul class="menu-section-list">
-            <li><a href="https://github.com/mango/slideout#installation" target="_blank">Installation</a></li>
-            <li><a href="https://github.com/mango/slideout#usage" target="_blank">Usage</a></li>
-            <li><a href="https://github.com/mango/slideout#api" target="_blank">API</a></li>
-            <li><a href="https://github.com/mango/slideout#npm-scripts" target="_blank">npm-scripts</a></li>
-        </ul>
-    </section>
-
-    <section class="menu-section">
-        <h3 class="menu-section-title">Slideout</h3>
-        <ul class="menu-section-list">
-            <li><a href="https://github.com/mango/slideout" target="_blank">Fork it</a></li>
-            <li><a href="https://github.com/mango/slideout/issues/new" target="_blank">Create an issue</a></li>
-            <li><a href="https://github.com/mango/slideout/releases/">Download</a></li>
-        </ul>
-    </section>
-
-    <section class="menu-section">
-        <h3 class="menu-section-title">Mango</h3>
-        <ul class="menu-section-list">
-            <li><a href="https://getmango.com" target="_blank">About Mango</a></li>
-            <li><a href="https://twitter.com/getmango" target="_blank">Follow Us</a></li>
+            <li><a href="/slideout" target="_self">Installation</a></li>
+            <li><a href="/slideout" target="_self">Usage</a></li>
+            <li><a href="/slideout" target="_self">API</a></li>
+            <li><a href="/slideout" target="_self">npm-scripts</a></li>
         </ul>
     </section>
 </nav>

@@ -10,6 +10,9 @@ class ImageHelper
      */
     public function __construct()
     {
+
     }
+
+
 
 }
