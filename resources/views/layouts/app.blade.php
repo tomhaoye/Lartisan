@@ -103,19 +103,19 @@
 <nav id="menu" class="">
     <a href="https://github.com/tomhaoye/larame" target="_blank">
         <header class="menu-header">
-            <span class="menu-header-title">
+            <div class="menu-header-title">
                 Notifications
-            </span>
+            </div>
         </header>
     </a>
 
     <section class="menu-section">
-        <h3 class="menu-section-title">Docs</h3>
+        <div class="menu-section-title">System</div>
         <ul class="menu-section-list">
-            <li><a href="/slideout" target="_self">Installation</a></li>
-            <li><a href="/slideout" target="_self">Usage</a></li>
-            <li><a href="/slideout" target="_self">API</a></li>
-            <li><a href="/slideout" target="_self">npm-scripts</a></li>
+            <li><a href="/slideout" target="_self">welcome to larame</a></li>
+            <li><a href="/slideout" target="_self">the next message</a></li>
+            <li><a href="/slideout" target="_self">what can you do here</a></li>
+            <li><a href="/slideout" target="_self">have fun!</a></li>
         </ul>
     </section>
 </nav>
