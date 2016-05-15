@@ -13,6 +13,19 @@ class ImageHelper
 
     }
 
+    public function upload()
+    {
 
+    }
+
+    public function compress()
+    {
+
+    }
+
+    public function delete()
+    {
+
+    }
 
 }
