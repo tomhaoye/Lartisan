@@ -30,7 +30,7 @@
 
 
             <div class="col-sm-12 col-md-2 animated fadeIn">
-                <a class="thumbnail loaded" href="http://www.applandr.com/" target="_blank">
+                <a class="thumbnail loaded" href="#" target="_blank">
                     <img src="/image/bg3.jpg" width="700"height="438">
                 </a>
             </div>

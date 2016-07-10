@@ -104,19 +104,52 @@
     <a href="https://github.com/tomhaoye/larame" target="_blank">
         <header class="menu-header">
             <div class="menu-header-title">
-                Notifications
+                <h4>Larame</h4>
             </div>
         </header>
     </a>
 
     <section class="menu-section">
-        <div class="menu-section-title">System</div>
-        <ul class="menu-section-list">
-            <li><a href="/slideout" target="_self">welcome to larame</a></li>
-            <li><a href="/slideout" target="_self">the next message</a></li>
-            <li><a href="/slideout" target="_self">what can you do here</a></li>
-            <li><a href="/slideout" target="_self">have fun!</a></li>
-        </ul>
+
+
+        <div id="jquery-accordion-menu" class="jquery-accordion-menu red">
+            <ul id="demo-list">
+
+                <li class="active"><a href="#"><i class="fa fa-home"></i>Home </a></li>
+                <li><a href="#"><i class="fa fa-glass"></i>Events </a></li>
+                <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">
+				12 </span></li>
+                <li><a href="#"><i class="fa fa-cog"></i>Services </a>
+                    <ul class="submenu">
+                        <li><a href="#">Web Design </a></li>
+                        <li><a href="#">Hosting </a></li>
+                        <li><a href="#">Design </a>
+                            <ul class="submenu">
+                                <li><a href="#">Graphics </a></li>
+                                <li><a href="#">Vectors </a></li>
+                                <li><a href="#">Photoshop </a></li>
+                                <li><a href="#">Fonts </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Consulting </a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-home"></i>系统管理 </a></li>
+                <li><a href="#"><i class="fa fa-suitcase"></i>Portfolio </a>
+                    <ul class="submenu">
+                        <li><a href="#">Web Design </a></li>
+                        <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span>
+                        </li>
+                        <li><a href="#">Photoshop </a></li>
+                        <li><a href="#">Programming </a></li>
+                    </ul>
+                </li>
+                <li><a href="#"><i class="fa fa-user"></i>About </a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>Contact </a></li>
+
+            </ul>
+        </div>
+
     </section>
 </nav>
 

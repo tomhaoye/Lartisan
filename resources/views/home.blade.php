@@ -83,13 +83,13 @@
             </div>
 
             <div class="col-sm-3 col-md-3">
-                <a class="thumbnail loaded" href="http://www.applandr.com/" target="_blank">
+                <a class="thumbnail loaded" href="#" target="_blank">
                     <img src="image/bg3.jpg" width="700" height="438">
                 </a>
             </div>
 
             <div class="col-sm-3 col-md-3">
-                <a class="thumbnail loaded" href="http://www.applandr.com/" target="_blank">
+                <a class="thumbnail loaded" href="#" target="_blank">
                     <img src="image/bg3.jpg" width="700" height="438">
                 </a>
             </div>
