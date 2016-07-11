@@ -72,11 +72,7 @@ a:hover{
     display: block;
 }
 
-
-
-
-*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
-.content{width:260px;margin:20px auto;}
+/*menu*/
 .filterinput{
     background-color:rgba(249, 244, 244, 0);
     border-radius:15px;
