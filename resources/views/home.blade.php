@@ -8,7 +8,9 @@
                     <div class="panel-heading">
                         <div class="btn-toolbar">
                             <div class="btn-group">
-                                <a class="btn" href="#" id="change_view"><i class="glyphicon glyphicon-list"></i></a>
+                                <a class="btn" href="#" id="change_view">
+                                    <span class="badge">0</span>
+                                </a>
                             </div>
                         </div>
                     </div>
