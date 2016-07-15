@@ -115,7 +115,7 @@
         <div id="jquery-accordion-menu" class="jquery-accordion-menu red">
             <ul id="demo-list">
 
-                <li class="active"><a href="#"><i class="fa fa-home"></i>Home </a></li>
+                <li class="active"><a href="/home"><i class="fa fa-home"></i>Home </a></li>
                 <li><a href="#"><i class="fa fa-glass"></i>Events </a></li>
                 <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">
 				12 </span></li>
@@ -143,8 +143,8 @@
                         <li><a href="#">Programming </a></li>
                     </ul>
                 </li>
-                <li><a href="#"><i class="fa fa-user"></i>About </a></li>
-                <li><a href="#"><i class="fa fa-envelope"></i>Contact </a></li>
+                <li><a href="#"><i class="fa fa-user"></i>Settings </a></li>
+                <li><a href="#"><i class="fa fa-envelope"></i>Notification </a></li>
 
             </ul>
         </div>
