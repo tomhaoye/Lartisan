@@ -5,6 +5,23 @@ body {
     width: 100%;
     height: 100%;
 }
+
+#pjax-container{
+    padding-bottom: 100px;
+}
+
+/* HTML5布局样式 直接对footer元素设置样式 */
+footer{
+    position: absolute;
+    bottom: 0;
+    background: #fd7d70;
+    border-top:1px solid #fd7d70;
+    padding:10px 0 10px 0;
+    width:100%;
+    line-height:20px;
+    text-align:center;
+}
+
 #navbar {
     background-color: #ffffff;
 }

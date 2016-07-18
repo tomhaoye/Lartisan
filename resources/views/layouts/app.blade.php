@@ -72,6 +72,7 @@
     @yield('content')
 
     <footer id="footer" class="footer">
+        <a href="/html/about.html">About</a>
     </footer>
 </main>
 
