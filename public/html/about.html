@@ -2,42 +2,59 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
     <meta name="renderer" content="webkit">
     <title>Larame</title>
+    <link rel="stylesheet" href="css/lib/Vidage.css"/>
     <link href="css/about.css" rel="stylesheet">
     <!--[if lte IE 8]>
     <style type="text/css">
-        html,body{width:100%; height:100%; overflow:scroll}
-        .section-btn{display:none;}
+        html, body {
+            width: 100%;
+            height: 100%;
+            overflow: scroll
+        }
+
+        .section-btn {
+            display: none;
+        }
     </style>
     <![endif]-->
 </head>
 <body>
 <section class="section-wrap">
-    <div class="section section-1">
+    <div class="section">
         <div class="title active">
-            <p class="tit"> </p>
+            <div class="Vidage">
+                <div class="Vidage__image"></div>
+
+                <video id="VidageVideo" class="Vidage__video" preload="auto" loop autoplay muted>
+                    <source src="videos/bg.webm" type="video/webm">
+                    <source src="videos/bg.mp4" type="video/mp4">
+                </video>
+
+                <div class="Vidage__backdrop"></div>
+            </div>
         </div>
     </div>
     <div class="section section-2">
         <div class="title">
-            <p class="tit"> </p>
+            <p class="tit"></p>
         </div>
     </div>
     <div class="section section-3">
         <div class="title">
-            <p class="tit"> </p>
+            <p class="tit"></p>
         </div>
     </div>
     <div class="section section-4">
         <div class="title">
-            <p class="tit"> </p>
+            <p class="tit"></p>
         </div>
     </div>
     <div class="section section-5">
         <div class="title">
-            <p class="tit"> </p>
+            <p class="tit"></p>
         </div>
     </div>
 </section>
@@ -53,6 +70,10 @@
 
 <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/about.js"></script>
+<script src="js/lib/Vidage.min.js"></script>
+<script>
+    new Vidage('#VidageVideo');
+</script>
 
 </body>
 </html>
