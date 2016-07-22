@@ -111,14 +111,14 @@ span.item a:hover {
 
 .toggle {
     position: absolute;
-    top: 25px;
+    top: 24px;
     height: 30px;
     width: 30px;
     cursor: pointer;
 }
 .toggle:after, .toggle:before {
     content: '';
-    background: #1D90F5;
+    background: rgba(245, 231, 245, 1);
     width: 40px;
     height: 8px;
     position: absolute;
