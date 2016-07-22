@@ -27,3 +27,114 @@ html,body{ width:100%; height:100%; overflow:hidden;}
 .arrow:hover{ animation-play-state:paused;-webkit-animation-play-state:paused;}
 @keyframes arrow{%0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5} }
 @-webkit-keyframes arrow{ %0,%100{bottom:10px; opacity:1;} 50%{bottom:50px; opacity:.5} }
+
+.menu {
+    opacity: 0.5;
+    display: block;
+    box-sizing: border-box;
+    background: white;
+    height: 55px;
+    width: 55px;
+    padding: 16px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin: 20px auto;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.15);
+    transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+}
+.menu.expanded {
+    width: 400px;
+}
+
+span.item {
+    padding: 9px;
+    white-space: nowrap;
+    visibility: visible;
+    opacity: 1;
+    transition: .3s;
+    transform: rotateY(0deg);
+}
+span.item:nth-of-type(1) {
+    transition-delay: .4s;
+}
+span.item:nth-of-type(2) {
+    transition-delay: .5s;
+}
+span.item:nth-of-type(3) {
+    transition-delay: .6s;
+}
+span.item:nth-of-type(4) {
+    transition-delay: .7s;
+}
+span.hidden {
+    width: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: rotateY(90deg);
+}
+span.hidden:nth-of-type(1) {
+    transition-delay: .3s;
+}
+span.hidden:nth-of-type(2) {
+    transition-delay: .2s;
+}
+span.hidden:nth-of-type(3) {
+    transition-delay: .1s;
+}
+span.hidden:nth-of-type(4) {
+    transition-delay: 0s;
+}
+span.item a {
+    color: black;
+    text-decoration: none;
+    font-size: 16.36364px;
+    transition: .3s;
+}
+span.item a:hover {
+    color: #1D90F5;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    right: calc(100% - 68px);
+    height: 60px;
+    width: 60px;
+    transition: 1s;
+}
+.container.close {
+    right: 0;
+}
+
+.toggle {
+    position: absolute;
+    top: 25px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.toggle:after, .toggle:before {
+    content: '';
+    background: #1D90F5;
+    width: 40px;
+    height: 8px;
+    position: absolute;
+    transition: 1.3s cubic-bezier(0.53, 0, 0.15, 1.3);
+}
+.toggle:before {
+    top: -30%;
+}
+.toggle:after {
+    top: 30%;
+}
+.toggle.close:before {
+    transform: rotate(-225deg);
+    top: 0;
+}
+.toggle.close:after {
+    transform: rotate(225deg);
+    top: 0;
+}
