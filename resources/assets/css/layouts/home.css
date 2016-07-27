@@ -5,6 +5,7 @@
 
 .topic>div{
     overflow: hidden;
+    width: 100%;
 }
 
 .topic-img{

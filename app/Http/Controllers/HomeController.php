@@ -23,8 +23,16 @@ class HomeController extends Controller
         foreach($topics as $topic){
             $topic->content = left($topic->content,100);
         }
-//        Toastr::info('welcome!');
         return view('home',compact('topics'));
+    }
+
+    public function interlocution()
+    {
+        $topics = Topics::orderBy('id','desc')->paginate(12);
+        foreach($topics as $topic){
+            $topic->content = left($topic->content,100);
+        }
+        return view('interlocution',compact('topics'));
     }
 
 

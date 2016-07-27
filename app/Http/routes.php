@@ -38,7 +38,8 @@ Route::get('/users/{users}',function(App\User $users){
 
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
-    Route::get('/home', 'HomeController@index');
+    Route::get('/index', 'HomeController@index');
+    Route::get('/interlocution', 'HomeController@interlocution');
     Route::get('/', function () {
         return view('welcome');
     });

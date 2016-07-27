@@ -38,7 +38,10 @@
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav animated fadeIn">
-                    <li><a data-pjax="no-pjax" href="{{ url('/home') }}">Home</a></li>
+                    <li><a data-pjax="no-pjax" href="{{ url('/index') }}">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav animated fadeIn">
+                    <li><a data-pjax="no-pjax" href="{{ url('/interlocution') }}">Interlocution</a></li>
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -116,7 +119,7 @@
         <div id="jquery-accordion-menu" class="jquery-accordion-menu red">
             <ul id="demo-list">
 
-                <li><a href="/home"><i class="fa fa-home"></i>Home </a></li>
+                <li><a href="{{ url('/index') }}"><i class="fa fa-home"></i>Home </a></li>
                 <li><a href="#"><i class="fa fa-glass"></i>Events </a></li>
                 <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">12 </span></li>
                 <li><a href="#"><i class="fa fa-cog"></i>Services </a>
