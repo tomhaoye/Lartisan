@@ -14,8 +14,8 @@ body {
 footer{
     position: absolute;
     bottom: 0;
-    background: #fd7d70;
-    border-top:1px solid #fd7d70;
+    background: rgba(253, 125, 112, 0.45);
+    border-top:1px solid rgba(253, 125, 112, 0.36);
     padding:10px 0 10px 0;
     width:100%;
     line-height:20px;
@@ -39,7 +39,7 @@ textarea {
 }
 
 a{
-    color: #fd7d70;
+    color: #ff8b74;
 }
 a:hover{
     color: #fdac48;

@@ -34,6 +34,13 @@
                                 </a>
 
                             @endforeach
+                            @if(!count($topics))
+                                <a href="#" data-pjax="no-pjax">
+                                    <div class="col-lg-12 col-md-12 topic">
+                                        <h3>you can see nothing at all</h3>
+                                    </div>
+                                </a>
+                            @endif
                         </div>
 
                     </div>
@@ -46,7 +53,8 @@
             </div>
 
             <div class="col-sm-3 col-md-3">
-                <a class="col-lg-12 btn btn-success thumbnail right-side" data-pjax="no-pjax" href="{{route('topic.create')}}">create a new topic now</a>
+                <a class="col-lg-12 btn btn-success thumbnail right-side" data-pjax="no-pjax"
+                   href="{{route('topic.create')}}">create a new topic now</a>
             </div>
 
             <div class="col-sm-3 col-md-3">

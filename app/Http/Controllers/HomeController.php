@@ -19,7 +19,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $topics = Topics::orderBy('id','desc')->paginate(12);
+        $topics = Topics::orderBy('id','desc')->whereTypeId(1)->paginate(12);
         foreach($topics as $topic){
             $topic->content = left($topic->content,100);
         }
@@ -28,7 +28,7 @@ class HomeController extends Controller
 
     public function interlocution()
     {
-        $topics = Topics::orderBy('id','desc')->paginate(12);
+        $topics = Topics::orderBy('id','desc')->whereTypeId(2)->paginate(12);
         foreach($topics as $topic){
             $topic->content = left($topic->content,100);
         }
