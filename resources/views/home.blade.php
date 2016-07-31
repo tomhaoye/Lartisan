@@ -9,7 +9,16 @@
                         <div class="btn-toolbar">
                             <div class="btn-group">
                                 <a class="btn" href="#" id="change_view">
-                                    <span class="badge">0</span>
+                                    some
+                                </a>
+                                <a class="btn" href="#" id="change_view">
+                                    else
+                                </a>
+                                <a class="btn" href="#" id="change_view">
+                                    other
+                                </a>
+                                <a class="btn" href="#" id="change_view">
+                                    more
                                 </a>
                             </div>
                         </div>

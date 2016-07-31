@@ -6,54 +6,60 @@ body {
     height: 100%;
 }
 
-#pjax-container{
+#pjax-container {
     padding-bottom: 100px;
 }
 
 /* HTML5布局样式 直接对footer元素设置样式 */
-footer{
+footer {
     position: absolute;
     bottom: 0;
-    background: rgba(253, 125, 112, 0.45);
-    border-top:1px solid rgba(253, 125, 112, 0.36);
-    padding:10px 0 10px 0;
-    width:100%;
-    line-height:20px;
-    text-align:center;
+    background: rgba(255, 255, 255);
+    border-top: 1px solid rgba(253, 125, 112, 0.36);
+    padding: 10px 0 10px 0;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
 }
 
 #navbar {
     background-color: #ffffff;
 }
-#navbar a{
+
+#navbar a {
     color: #695669;
 }
-#navbar:hover{
+
+#navbar:hover {
     background-color: #ffffff;
 }
+
 .fa-btn {
     margin-right: 6px;
 }
+
 textarea {
     float: left;
 }
 
-a{
+a {
     color: #ff8b74;
 }
-a:hover{
+
+a:hover {
     color: #fdac48;
     text-decoration: none;
 }
 
-#main_panel{
+#main_panel {
     min-height: 100%;
 }
-#up_down{
+
+#up_down {
     z-index: 9999;
     position: fixed;
     bottom: 15%;
-    right:12%;
+    right: 12%;
 }
 
 /*slideout*/
@@ -73,7 +79,7 @@ a:hover{
 }
 
 .slideout-panel {
-    position:relative;
+    position: relative;
     z-index: 1;
     background-color: #ffffff;
     will-change: transform;
@@ -90,26 +96,27 @@ a:hover{
 }
 
 /*menu*/
-.filterinput{
-    background-color:rgba(249, 244, 244, 0);
-    border-radius:15px;
-    width:90%;
-    height:30px;
-    border:thin solid #FFF;
-    text-indent:0.5em;
-    font-weight:bold;
-    color:#FFF;
-}
-#demo-list a{
-    overflow:hidden;
-    text-overflow:ellipsis;
-    -o-text-overflow:ellipsis;
-    white-space:nowrap;
-    width:100%;
+.filterinput {
+    background-color: rgba(249, 244, 244, 0);
+    border-radius: 15px;
+    width: 90%;
+    height: 30px;
+    border: thin solid #FFF;
+    text-indent: 0.5em;
+    font-weight: bold;
+    color: #FFF;
 }
 
-.jquery-accordion-menu,.jquery-accordion-menu * {
-    font-family: 'Open Sans',sans-serif;
+#demo-list a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.jquery-accordion-menu, .jquery-accordion-menu * {
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -123,7 +130,7 @@ a:hover{
     box-shadow: 0 20px 50px #333
 }
 
-.jquery-accordion-menu .jquery-accordion-menu-footer,.jquery-accordion-menu .jquery-accordion-menu-header {
+.jquery-accordion-menu .jquery-accordion-menu-footer, .jquery-accordion-menu .jquery-accordion-menu-header {
     width: 100%;
     height: 50px;
     padding-left: 22px;
@@ -158,18 +165,18 @@ a:hover{
     white-space: nowrap;
     position: relative;
     overflow: hidden;
-    -o-transition: color .2s linear,background .2s linear;
-    -moz-transition: color .2s linear,background .2s linear;
-    -webkit-transition: color .2s linear,background .2s linear;
-    transition: color .2s linear,background .2s linear
+    -o-transition: color .2s linear, background .2s linear;
+    -moz-transition: color .2s linear, background .2s linear;
+    -webkit-transition: color .2s linear, background .2s linear;
+    transition: color .2s linear, background .2s linear
 }
 
-.jquery-accordion-menu>ul>li.active>a,.jquery-accordion-menu>ul>li:hover>a {
+.jquery-accordion-menu > ul > li.active > a, .jquery-accordion-menu > ul > li:hover > a {
     color: #fff;
     background: #3b424d
 }
 
-.jquery-accordion-menu>ul>li>a {
+.jquery-accordion-menu > ul > li > a {
     border-bottom: solid 1px #3b424d
 }
 
@@ -197,14 +204,14 @@ a:hover{
     line-height: 16px
 }
 
-.jquery-accordion-menu .submenu-indicator-minus>.submenu-indicator {
+.jquery-accordion-menu .submenu-indicator-minus > .submenu-indicator {
     -ms-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg)
 }
 
-.jquery-accordion-menu ul ul.submenu,.jquery-accordion-menu ul ul.submenu li ul.submenu {
+.jquery-accordion-menu ul ul.submenu, .jquery-accordion-menu ul ul.submenu li ul.submenu {
     width: 100%;
     display: none;
     position: static
@@ -229,23 +236,23 @@ a:hover{
     transition: border .2s linear
 }
 
-.jquery-accordion-menu ul ul.submenu li:hover>a {
+.jquery-accordion-menu ul ul.submenu li:hover > a {
     border-left-color: #414956
 }
 
-.jquery-accordion-menu ul ul.submenu>li>a {
+.jquery-accordion-menu ul ul.submenu > li > a {
     padding-left: 30px
 }
 
-.jquery-accordion-menu ul ul.submenu>li>ul.submenu>li>a {
+.jquery-accordion-menu ul ul.submenu > li > ul.submenu > li > a {
     padding-left: 45px
 }
 
-.jquery-accordion-menu ul ul.submenu>li>ul.submenu>li>ul.submenu>li>a {
+.jquery-accordion-menu ul ul.submenu > li > ul.submenu > li > ul.submenu > li > a {
     padding-left: 60px
 }
 
-.jquery-accordion-menu ul li .jquery-accordion-menu-label,.jquery-accordion-menu ul ul.submenu li .jquery-accordion-menu-label {
+.jquery-accordion-menu ul li .jquery-accordion-menu-label, .jquery-accordion-menu ul ul.submenu li .jquery-accordion-menu-label {
     min-width: 20px;
     padding: 1px 2px 1px 1px;
     position: absolute;
@@ -267,7 +274,7 @@ a:hover{
 .ink {
     display: block;
     position: absolute;
-    background: rgba(255,255,255,.3);
+    background: rgba(255, 255, 255, .3);
     border-radius: 100%;
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
@@ -312,68 +319,68 @@ a:hover{
     }
 }
 
-.blue.jquery-accordion-menu .jquery-accordion-menu-footer,.blue.jquery-accordion-menu .jquery-accordion-menu-header,.blue.jquery-accordion-menu ul li a {
+.blue.jquery-accordion-menu .jquery-accordion-menu-footer, .blue.jquery-accordion-menu .jquery-accordion-menu-header, .blue.jquery-accordion-menu ul li a {
     background: #4A89DC
 }
 
-.blue.jquery-accordion-menu>ul>li.active>a,.blue.jquery-accordion-menu>ul>li:hover>a {
+.blue.jquery-accordion-menu > ul > li.active > a, .blue.jquery-accordion-menu > ul > li:hover > a {
     background: #3e82da
 }
 
-.blue.jquery-accordion-menu>ul>li>a {
+.blue.jquery-accordion-menu > ul > li > a {
     border-bottom-color: #3e82da
 }
 
-.blue.jquery-accordion-menu ul ul.submenu li:hover>a {
+.blue.jquery-accordion-menu ul ul.submenu li:hover > a {
     border-left-color: #3e82da
 }
 
-.green.jquery-accordion-menu .jquery-accordion-menu-footer,.green.jquery-accordion-menu .jquery-accordion-menu-header,.green.jquery-accordion-menu ul li a {
+.green.jquery-accordion-menu .jquery-accordion-menu-footer, .green.jquery-accordion-menu .jquery-accordion-menu-header, .green.jquery-accordion-menu ul li a {
     background: #03A678
 }
 
-.green.jquery-accordion-menu>ul>li.active>a,.green.jquery-accordion-menu>ul>li:hover>a {
+.green.jquery-accordion-menu > ul > li.active > a, .green.jquery-accordion-menu > ul > li:hover > a {
     background: #049372
 }
 
-.green.jquery-accordion-menu>ul>li>a {
+.green.jquery-accordion-menu > ul > li > a {
     border-bottom-color: #049372
 }
 
-.green.jquery-accordion-menu ul ul.submenu li:hover>a {
+.green.jquery-accordion-menu ul ul.submenu li:hover > a {
     border-left-color: #049372
 }
 
-.red.jquery-accordion-menu .jquery-accordion-menu-footer,.red.jquery-accordion-menu .jquery-accordion-menu-header,.red.jquery-accordion-menu ul li a {
+.red.jquery-accordion-menu .jquery-accordion-menu-footer, .red.jquery-accordion-menu .jquery-accordion-menu-header, .red.jquery-accordion-menu ul li a {
     background: #ED5565
 }
 
-.red.jquery-accordion-menu>ul>li.active>a,.red.jquery-accordion-menu>ul>li:hover>a {
+.red.jquery-accordion-menu > ul > li.active > a, .red.jquery-accordion-menu > ul > li:hover > a {
     background: #DA4453
 }
 
-.red.jquery-accordion-menu>ul>li>a {
+.red.jquery-accordion-menu > ul > li > a {
     border-bottom-color: #DA4453
 }
 
-.red.jquery-accordion-menu ul ul.submenu li:hover>a {
+.red.jquery-accordion-menu ul ul.submenu li:hover > a {
     border-left-color: #DA4453
 }
 
-.white.jquery-accordion-menu .jquery-accordion-menu-footer,.white.jquery-accordion-menu .jquery-accordion-menu-header,.white.jquery-accordion-menu ul li a {
+.white.jquery-accordion-menu .jquery-accordion-menu-footer, .white.jquery-accordion-menu .jquery-accordion-menu-header, .white.jquery-accordion-menu ul li a {
     background: #fff;
     color: #555
 }
 
-.white.jquery-accordion-menu>ul>li.active>a,.white.jquery-accordion-menu>ul>li:hover>a {
+.white.jquery-accordion-menu > ul > li.active > a, .white.jquery-accordion-menu > ul > li:hover > a {
     background: #f0f0f0
 }
 
-.white.jquery-accordion-menu>ul>li>a {
+.white.jquery-accordion-menu > ul > li > a {
     border-bottom-color: #f0f0f0
 }
 
-.white.jquery-accordion-menu ul ul.submenu li:hover>a {
+.white.jquery-accordion-menu ul ul.submenu li:hover > a {
     border-left-color: #f0f0f0
 }
 
@@ -381,22 +388,22 @@ a:hover{
     color: #f0f0f0
 }
 
-.white.jquery-accordion-menu>ul>li>a>.ink {
-    background: rgba(0,0,0,.1)
+.white.jquery-accordion-menu > ul > li > a > .ink {
+    background: rgba(0, 0, 0, .1)
 }
 
-.black.jquery-accordion-menu .jquery-accordion-menu-footer,.black.jquery-accordion-menu .jquery-accordion-menu-header,.black.jquery-accordion-menu ul li a {
+.black.jquery-accordion-menu .jquery-accordion-menu-footer, .black.jquery-accordion-menu .jquery-accordion-menu-header, .black.jquery-accordion-menu ul li a {
     background: #292929
 }
 
-.black.jquery-accordion-menu>ul>li.active>a,.black.jquery-accordion-menu>ul>li:hover>a {
+.black.jquery-accordion-menu > ul > li.active > a, .black.jquery-accordion-menu > ul > li:hover > a {
     background: #222
 }
 
-.black.jquery-accordion-menu>ul>li>a {
+.black.jquery-accordion-menu > ul > li > a {
     border-bottom-color: #222
 }
 
-.black.jquery-accordion-menu ul ul.submenu li:hover>a {
+.black.jquery-accordion-menu ul ul.submenu li:hover > a {
     border-left-color: #222
 }
