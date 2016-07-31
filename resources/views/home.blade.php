@@ -8,16 +8,16 @@
                     <div class="panel-heading">
                         <div class="btn-toolbar">
                             <div class="btn-group">
-                                <a class="btn" href="#" id="change_view">
+                                <a class="btn" href="#">
                                     some
                                 </a>
-                                <a class="btn" href="#" id="change_view">
+                                <a class="btn" href="#">
                                     else
                                 </a>
-                                <a class="btn" href="#" id="change_view">
+                                <a class="btn" href="#">
                                     other
                                 </a>
-                                <a class="btn" href="#" id="change_view">
+                                <a class="btn" href="#">
                                     more
                                 </a>
                             </div>
