@@ -9,9 +9,7 @@
                     <div class="panel-heading">
                         <div class="btn-toolbar">
                             <div class="btn-group">
-                                <a class="btn" href="#" id="change_view">
-                                    <span class="badge">0</span>
-                                </a>
+                                Dream out loud
                             </div>
                         </div>
                     </div>
