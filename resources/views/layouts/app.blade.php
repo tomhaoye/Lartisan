@@ -89,14 +89,14 @@
             <ul class="dropdown-menu">
                 <li>
                     <a href="#top" class="J_backtop">
-                        Go To Top
+                        Top
                     </a>
                 </li>
                 <li class="divider">
                 </li>
                 <li>
                     <a href="#footer" class="J_backbottom">
-                        Go To Bottom
+                        Bottom
                     </a>
                 </li>
             </ul>

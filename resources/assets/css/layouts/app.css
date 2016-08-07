@@ -10,6 +10,10 @@ body {
     padding-bottom: 100px;
 }
 
+.dropdown-menu{
+    min-width: 60px !important;
+}
+
 /* HTML5布局样式 直接对footer元素设置样式 */
 footer {
     position: absolute;
