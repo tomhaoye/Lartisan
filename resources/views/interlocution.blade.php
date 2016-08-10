@@ -48,11 +48,11 @@
                                 </a>
                             @endforeach
                             @if(!count($topics))
-                                    <a href="#" data-pjax="no-pjax">
-                                        <div class="col-lg-12 col-md-12 topic">
-                                                 <h3>you can see nothing at all</h3>
-                                        </div>
-                                    </a>
+                                <a href="#" data-pjax="no-pjax">
+                                    <div class="col-lg-12 col-md-12 topic">
+                                        <h3>you can see nothing at all</h3>
+                                    </div>
+                                </a>
                             @endif
                         </div>
 
@@ -66,20 +66,61 @@
             </div>
 
             <div class="col-sm-3 col-md-3">
-                <a class="col-lg-12 btn btn-success thumbnail right-side" data-pjax="no-pjax"
-                   href="{{route('topic.create')}}">have a talk</a>
-            </div>
+                <div class="col-sm-12 col-md-12">
+                    <a class="col-lg-12 btn btn-success thumbnail right-side" data-pjax="no-pjax"
+                       href="{{route('topic.create')}}">have a talk</a>
+                </div>
 
-            <div class="col-sm-3 col-md-3">
-                <a class="thumbnail loaded" href="#" target="_blank">
-                    <img src="image/bg3.jpg" width="700" height="438">
-                </a>
-            </div>
+                <div class="col-sm-12 col-md-12">
+                    <a class="thumbnail loaded" href="#" target="_blank">
+                        <img src="image/bg3.jpg" width="700" height="438">
+                    </a>
+                </div>
 
-            <div class="col-sm-3 col-md-3">
-                <a class="thumbnail loaded" href="#" target="_blank">
-                    <img src="image/bg3.jpg" width="700" height="438">
-                </a>
+                <div class="col-sm-12 col-md-12">
+                    <a class="thumbnail loaded" href="#" target="_blank">
+                        <img src="image/bg3.jpg" width="700" height="438">
+                    </a>
+                </div>
+
+                <div class="col-sm-12 sol-md-12">
+                    <div class="panel panel-default corner-radius">
+                        <div class="panel-heading text-center">
+                            <h3 class="panel-title">友情社区</h3>
+                        </div>
+                        <div class="panel-body text-center" style="padding-top: 5px;">
+                            <a href="https://ruby-china.org" target="_blank" rel="nofollow" title="Ruby China"
+                               style="padding: 3px;">
+                                <img src="https://dn-phphub.qbox.me/assets/images/friends/ruby-china.png"
+                                     style="width:150px; margin: 3px 0;">
+                            </a>
+                            <a href="http://golangtc.com/" target="_blank" rel="nofollow" title="Golang 中国"
+                               style="padding: 3px;">
+                                <img src="https://dn-phphub.qbox.me/assets/images/friends/golangcn.png"
+                                     style="width:150px; margin: 3px 0;">
+                            </a>
+                            <a href="http://cnodejs.org/" target="_blank" rel="nofollow" title="CNode：Node.js 中文社区"
+                               style="padding: 3px;">
+                                <img src="https://dn-phphub.qbox.me/assets/images/friends/cnodejs.png"
+                                     style="width:150px; margin: 3px 0;">
+                            </a>
+                            <a href="https://testerhome.com" target="_blank" rel="nofollow" title="Tester Home"
+                               style="padding: 3px;">
+                                <img src="https://dn-phphub.qbox.me/testerhome-logo.png"
+                                     style="width:150px; margin: 3px 0;">
+                            </a>
+                            <a href="http://laravel.so/" target="_blank" rel="nofollow" title="Laravel So"
+                               style="padding: 3px;">
+                                <img src="http://laravel.so/img/site-logo.png" style="width:150px; margin: 3px 0;">
+                            </a>
+                            <a href="https://easywechat.org/" target="_blank" rel="nofollow" title="Easy We Chat"
+                               style="padding: 3px;">
+                                <img src="https://easywechat.org/logo.svg" style="width:150px; margin: 3px 0;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
