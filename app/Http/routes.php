@@ -36,6 +36,10 @@ Route::get('/users/{users}', function (App\User $users) {
     return $users;
 })->middleware('throttle:3');
 
+Route::group(['middleware' => ['web', 'auth']], function () {
+    Route::resource('topic', 'TopicsController', ['except' => ['index', 'show']]);
+});
+
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/index', 'HomeController@index');
@@ -44,9 +48,9 @@ Route::group(['middleware' => 'web'], function () {
         return view('welcome');
     });
 
-    Route::resource('topic', 'TopicsController');
+    Route::resource('topic', 'TopicsController', ['only' => ['index', 'show']]);
+
     Route::resource('users', 'UsersController');
 });
 
-Route::group(['middleware' => 'auth'], function () {
-});
+
