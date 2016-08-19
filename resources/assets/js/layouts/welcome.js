@@ -156,7 +156,7 @@ $(document).ready(function() {
                         // Finally clear the interval
                         clearInterval(z);
 
-                        window.location = '/home';
+                        window.location = '/index';
 
                     }
 
