@@ -82,7 +82,7 @@
                 <div class="col-sm-12 sol-md-12">
                     <div class="panel panel-default corner-radius">
                         <div class="panel-heading text-center">
-                            <h3 class="panel-title">友情社区</h3>
+                            <h3 class="panel-title">Recommended</h3>
                         </div>
                         <div class="panel-body text-center" style="padding-top: 5px;">
                             <a href="https://ruby-china.org" target="_blank" rel="nofollow" title="Ruby China"
