@@ -61,6 +61,18 @@ return [
             'region' => 'your-region',
             'bucket' => 'your-bucket',
         ],
+        'qiniu' => [
+            'driver' => 'qiniu',
+            'domains' => [
+                'default' => env('QINIU_DOMAIN'), //你的七牛域名
+                'https' => env('QINIU_MY_DOMAIN'),         //你的HTTPS域名
+                'custom' => env('QINIU_CUSTOM'),                //你的自定义域名
+            ],
+            'access_key' => env('QINIU_ACCESS_KEY'),  //AccessKey
+            'secret_key' => env('QINIU_SECRET_KEY'),  //SecretKey
+            'bucket' => env('QINIU_BUCKET'),  //Bucket名字
+            'notify_url' => env('QINIU_NOTIFY_URL'),  //持久化处理回调地址
+        ],
 
     ],
 
