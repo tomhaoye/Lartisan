@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>LaraMe</title>
+    <title>Lartisan</title>
 
     <link href="{{ elixir('css/all.css') }}" rel='stylesheet' type='text/css'>
     <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -32,7 +32,7 @@
                 <!-- Branding Image -->
                 <a class="navbar-brand animated bounceInLeft toggle-button" data-pjax="no-pjax"
                    href="#">
-                    LaraMe
+                    Lartisan
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -108,7 +108,7 @@
     <a href="https://github.com/tomhaoye/larame" target="_blank">
         <header class="menu-header">
             <div class="menu-header-title">
-                <h4>Larame</h4>
+                <h4>Lartisan</h4>
             </div>
         </header>
     </a>
