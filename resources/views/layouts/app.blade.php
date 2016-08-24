@@ -105,7 +105,7 @@
 </div>
 
 <nav id="menu" class="">
-    <a href="https://github.com/tomhaoye/larame" target="_blank">
+    <a href="https://github.com/tomhaoye/Lartisan" target="_blank">
         <header class="menu-header">
             <div class="menu-header-title">
                 <h4>Lartisan</h4>
