@@ -10,7 +10,7 @@ body {
     padding-bottom: 100px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     min-width: 60px !important;
 }
 
@@ -18,8 +18,8 @@ body {
 footer {
     position: absolute;
     bottom: 0;
-    background: rgba(255, 255, 255);
-    border-top: 1px solid rgba(253, 125, 112, 0.36);
+    background: rgba(255, 255, 255, 1);
+    border-top: 1px solid rgba(114, 253, 171, 0.36);
     padding: 10px 0 10px 0;
     width: 100%;
     line-height: 20px;
@@ -28,6 +28,7 @@ footer {
 
 #navbar {
     background-color: #ffffff;
+    border: none;
 }
 
 #navbar a {
@@ -47,11 +48,11 @@ textarea {
 }
 
 a {
-    color: #ff8b74;
+    color: #53e3a6;
 }
 
 a:hover {
-    color: #fdac48;
+    color: #37986f;
     text-decoration: none;
 }
 

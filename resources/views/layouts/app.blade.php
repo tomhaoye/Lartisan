@@ -116,7 +116,7 @@
     <section class="menu-section">
 
 
-        <div id="jquery-accordion-menu" class="jquery-accordion-menu red">
+        <div id="jquery-accordion-menu" class="jquery-accordion-menu green">
             <ul id="demo-list">
 
                 <li><a href="{{ url('/index') }}"><i class="fa fa-home"></i>Home </a></li>

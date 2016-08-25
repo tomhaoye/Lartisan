@@ -1,12 +1,12 @@
 //falldown
-$(document).ready(function(){
-    $('#fall div div').each(function(id){
-        var wait = Math.floor((Math.random()*3000));
-        $(this).delay(wait).animate({
-            opacity: 1
-    },1000,'swing');
-    });
-});
+// $(document).ready(function(){
+//     $('#fall div div').each(function(id){
+//         var wait = Math.floor((Math.random()*3000));
+//         $(this).delay(wait).animate({
+//             opacity: 1
+//     },1000,'swing');
+//     });
+// });
 
 // click cloud
 /*$('.guide-cover').on('click',function(){
