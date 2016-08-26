@@ -19,7 +19,7 @@ footer {
     position: absolute;
     bottom: 0;
     background: rgba(255, 255, 255, 1);
-    border-top: 1px solid rgba(114, 253, 171, 0.36);
+    border-top: 1px solid #3fae83;
     padding: 10px 0 10px 0;
     width: 100%;
     line-height: 20px;
@@ -48,7 +48,7 @@ textarea {
 }
 
 a {
-    color: #53e3a6;
+    color: #3fae83;
 }
 
 a:hover {

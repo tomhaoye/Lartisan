@@ -1,6 +1,32 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="wrapper visible-lg">
+
+        <div class="contain">
+            <h1>Welcome</h1>
+            <form class="form">
+                <input class="hide" type="text" placeholder="Username">
+                <input class="hide" type="password" placeholder="Password">
+                <button type="button" id="login-button" class="login-btn">Lartisan</button>
+            </form>
+        </div>
+
+        <ul class="bg-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+    </div>
+
     <div class="container" id="pjax-container">
         <div class="row">
             <div class="col-md-12 hidden-lg clipped-box">
@@ -10,32 +36,6 @@
                 </div>
             </div>
 
-
-            <div class="wrapper visible-lg">
-
-                <div class="contain">
-                    <h1>Welcome</h1>
-                    <form class="form">
-                        <input class="hide" type="text" placeholder="Username">
-                        <input class="hide" type="password" placeholder="Password">
-                        <button type="button" id="login-button" class="login-btn">Lartisan</button>
-                    </form>
-                </div>
-
-                <ul class="bg-bubbles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-
-            </div>
 
             <div id="loading" class="col-md-12 hidden-lg">
                 <div class="spinner">

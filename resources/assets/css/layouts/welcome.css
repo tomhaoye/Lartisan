@@ -1,3 +1,6 @@
+.container {
+}
+
 /*lartisan*/
 @import url(http://fonts.useso.com/css?family=Source+Sans+Pro:200,300);
 
@@ -270,8 +273,6 @@ body :-ms-input-placeholder {
     z-index: -1;
     width: 30px;
     height: 30px;
-    background-color: #FCA7A2;
-
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: bouncedelay 1.4s infinite ease-in-out;

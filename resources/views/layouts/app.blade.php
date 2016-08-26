@@ -44,6 +44,7 @@
                     <li><a data-pjax="no-pjax" href="{{ url('/interlocution') }}">Interlocution</a></li>
                 </ul>
 
+
                 <!-- Right Side Of Navbar -->
                 <ul class="nav navbar-nav navbar-right">
                     <!-- Authentication Links -->
@@ -82,7 +83,7 @@
 <div id="up_down">
     <ul class="nav nav-pills">
         <li role="presentation" class="dropup">
-            <button class="btn btn-warning dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#" role="button"
                     aria-haspopup="true" aria-expanded="false">
                 GO <i class="glyphicon glyphicon-eject"></i>
             </button>
@@ -120,8 +121,9 @@
             <ul id="demo-list">
 
                 <li><a href="{{ url('/index') }}"><i class="fa fa-home"></i>Home </a></li>
-                <li><a href="#"><i class="fa fa-glass"></i>Events </a></li>
-                <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">12 </span></li>
+                <li><a href="#"><i class="fa fa-glass"></i>Interlocution </a></li>
+                <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">12 </span>
+                </li>
                 <li><a href="#"><i class="fa fa-cog"></i>Services </a>
                     <ul class="submenu">
                         <li><a href="#">Web Design </a></li>
