@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container" id="pjax-container">
-    <div class="row">
+    <div class="row" style="padding-top: 100px">
         <div class="col-md-8 col-md-offset-2 animated fadeInDown">
             <div class="panel panel-default">
                 <div class="panel-heading">Register</div>

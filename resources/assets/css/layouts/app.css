@@ -18,12 +18,17 @@ body {
 footer {
     position: absolute;
     bottom: 0;
-    background: rgba(255, 255, 255, 1);
-    border-top: 1px solid #3fae83;
+    background: #50a3a2;
+    background: -webkit-linear-gradient(top right, #50a3a2 0%, #53e3a6 100%);
+    background: linear-gradient(to bottom left, #50a3a2 0%, #53e3a6 100%);
     padding: 10px 0 10px 0;
     width: 100%;
     line-height: 20px;
     text-align: center;
+}
+
+footer a{
+    color: white;
 }
 
 #navbar {
@@ -48,11 +53,11 @@ textarea {
 }
 
 a {
-    color: #3fae83;
+    color: #50a3a2;
 }
 
 a:hover {
-    color: #37986f;
+    color: #53e3a6;
     text-decoration: none;
 }
 
@@ -341,19 +346,23 @@ a:hover {
 }
 
 .green.jquery-accordion-menu .jquery-accordion-menu-footer, .green.jquery-accordion-menu .jquery-accordion-menu-header, .green.jquery-accordion-menu ul li a {
-    background: #03A678
+    background: #50a3a2;
+    opacity: 0.8;
 }
 
 .green.jquery-accordion-menu > ul > li.active > a, .green.jquery-accordion-menu > ul > li:hover > a {
-    background: #049372
+    background: #50a3a2;
+    opacity: 0.8;
 }
 
 .green.jquery-accordion-menu > ul > li > a {
-    border-bottom-color: #049372
+    border-bottom-color: #50a3a2;
+    opacity: 0.8;
 }
 
 .green.jquery-accordion-menu ul ul.submenu li:hover > a {
-    border-left-color: #049372
+    border-left-color: #50a3a2;
+    opacity: 0.8;
 }
 
 .red.jquery-accordion-menu .jquery-accordion-menu-footer, .red.jquery-accordion-menu .jquery-accordion-menu-header, .red.jquery-accordion-menu ul li a {
