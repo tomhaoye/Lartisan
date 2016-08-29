@@ -5,7 +5,6 @@
     <div class="row" style="padding-top: 100px">
         <div class="col-md-8 col-md-offset-2 animated fadeInDown">
             <div class="panel panel-default">
-                <div class="panel-heading">Register</div>
                 <div class="panel-body">
                     <form class="form-horizontal" role="form" method="POST" action="{{ url('/register') }}">
                         {!! csrf_field() !!}
