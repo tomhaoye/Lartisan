@@ -27,7 +27,7 @@ footer {
     text-align: center;
 }
 
-footer a{
+footer a {
     color: white;
 }
 
@@ -61,11 +61,16 @@ a:hover {
     text-decoration: none;
 }
 
+.panel {
+    border: 1px solid #53e3a6;
+}
+
 #main_panel {
     min-height: 100%;
 }
 
 #up_down {
+    opacity: .5;
     z-index: 9999;
     position: fixed;
     bottom: 15%;

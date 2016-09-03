@@ -81,28 +81,10 @@
 </main>
 
 <div id="up_down">
-    <ul class="nav nav-pills">
-        <li role="presentation" class="dropup">
-            <button class="btn btn-success dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                    aria-haspopup="true" aria-expanded="false">
-                GO <i class="glyphicon glyphicon-eject"></i>
-            </button>
-            <ul class="dropdown-menu">
-                <li>
-                    <a href="#top" class="J_backtop">
-                        Top
-                    </a>
-                </li>
-                <li class="divider">
-                </li>
-                <li>
-                    <a href="#footer" class="J_backbottom">
-                        Bottom
-                    </a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+    <button class="btn" data-toggle="dropdown" href="#" role="button"
+            aria-haspopup="true" aria-expanded="false">
+        GO <i class="glyphicon glyphicon-eject"></i>
+    </button>
 </div>
 
 <nav id="menu" class="">
