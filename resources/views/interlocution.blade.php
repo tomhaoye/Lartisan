@@ -13,48 +13,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="panel-body">
-                        <div class="col-lg-12" id="long_view">
-                            @foreach($topics as $topic)
-                                <a href="{{url('/topic/'.$topic->id)}}" data-pjax="no-pjax">
-                                    <div class="col-lg-12 col-md-12 topic">
-                                        <div class="topic-content hvr-grow">
-                                            <div class="col-md-9">
-                                                <div class="date">
-                                                    {{$topic->created_at}}
-                                                </div>
-                                                <h3>
-                                                    {{$topic->title}}
-                                                </h3>
-
-                                                <div class="content">
-                                                    {{$topic->content}}
-                                                </div>
-                                                <div class="sort">
-                                                    {{$topic->sort()->getResults()->sort}}
-                                                </div>
+                    <div class="">
+                        @foreach($topics as $topic)
+                            <a href="{{url('/topic/'.$topic->id)}}" data-pjax="no-pjax">
+                                <div class="topic">
+                                    <div class="topic-content">
+                                        <div class="col-md-9">
+                                            <div class="date">
+                                                {{$topic->created_at}}
                                             </div>
-                                            <div class="topic-img col-md-3 visible-md visible-lg">
-                                                <div class="img-detail">
-                                                    <div>
-                                                        <img src="{{$topic->image}}" height="188">
-                                                    </div>
-                                                    <div class="detail">
-                                                    </div>
+                                            <h3>
+                                                {{$topic->title}}
+                                            </h3>
+
+                                            <div class="content">
+                                                {{$topic->content}}
+                                            </div>
+                                            <div class="sort">
+                                                {{$topic->sort()->getResults()->sort}}
+                                            </div>
+                                        </div>
+                                        <div class="topic-img col-md-3 visible-md visible-lg">
+                                            <div class="img-detail">
+                                                <div>
+                                                    <img src="{{$topic->image}}" height="188">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </a>
-                            @endforeach
-                            @if(!count($topics))
-                                <a href="#" data-pjax="no-pjax">
-                                    <div class="col-lg-12 col-md-12 topic">
-                                        <h3>you can see nothing at all</h3>
-                                    </div>
-                                </a>
-                            @endif
-                        </div>
+                                </div>
+                            </a>
+                        @endforeach
+                        @if(!count($topics))
+                            <a href="#" data-pjax="no-pjax">
+                                <div class="col-lg-12 col-md-12 topic">
+                                    <h3>you can see nothing at all</h3>
+                                </div>
+                            </a>
+                        @endif
 
                     </div>
                 </div>
