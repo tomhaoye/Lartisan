@@ -41,7 +41,7 @@
                     <li><a data-pjax="no-pjax" href="{{ url('/index') }}">Home</a></li>
                 </ul>
                 <ul class="nav navbar-nav animated fadeIn">
-                    <li><a data-pjax="no-pjax" href="{{ url('/interlocution') }}">Interlocution</a></li>
+                    <li><a data-pjax="no-pjax" href="{{ url('/flarum') }}">Interlocution</a></li>
                 </ul>
 
 

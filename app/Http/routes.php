@@ -43,7 +43,7 @@ Route::group(['middleware' => ['web', 'auth']], function () {
 Route::group(['middleware' => 'web'], function () {
     Route::auth();
     Route::get('/index', 'HomeController@index');
-    Route::get('/interlocution', 'HomeController@interlocution');
+    Route::get('/flarum', 'HomeController@flarum');
     Route::get('/', function () {
         return view('welcome');
     });
