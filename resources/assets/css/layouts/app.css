@@ -18,9 +18,6 @@ body {
 footer {
     position: absolute;
     bottom: 0;
-    background: #50a3a2;
-    background: -webkit-linear-gradient(top right, #50a3a2 0%, #53e3a6 100%);
-    background: linear-gradient(to bottom left, #50a3a2 0%, #53e3a6 100%);
     padding: 10px 0 10px 0;
     width: 100%;
     line-height: 20px;
@@ -28,7 +25,7 @@ footer {
 }
 
 footer a {
-    color: white;
+    color: #53e3a6;
 }
 
 #navbar {
