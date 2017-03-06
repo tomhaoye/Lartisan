@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Models\Topics;
-use Yuansir\Toastr\Facades\Toastr;
 
 class HomeController extends Controller
 {

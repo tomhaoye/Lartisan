@@ -163,6 +163,8 @@ return [
         Intervention\Image\ImageServiceProvider::class,
         zgldh\QiniuStorage\QiniuFilesystemServiceProvider::class,
 
+        //dev
+        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*
