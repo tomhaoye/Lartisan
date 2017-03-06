@@ -28,7 +28,7 @@
                         <div class="col-lg-12" id="short_view">
                             @foreach($topics as $topic)
                                 <a href="{{url('/topic/'.$topic->id)}}" data-pjax="no-pjax">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hvr-rotate">
+                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hvr-rotate water">
                                         <div class="thumbnail">
                                             <img src="{{$topic->image}}" alt="">
 
@@ -63,7 +63,7 @@
 
             <div class="col-sm-3 col-md-3">
                 <div class="col-sm-12 col-md-12">
-                    <a class="col-lg-12 btn btn-success thumbnail right-side" data-pjax="no-pjax"
+                    <a class="col-lg-12 btn btn-success thumbnail right-side"
                        href="{{route('topic.create')}}">create a new topic now</a>
                 </div>
 
@@ -104,10 +104,6 @@
                                style="padding: 3px;">
                                 <img src="https://dn-phphub.qbox.me/testerhome-logo.png"
                                      style="width:150px; margin: 3px 0;">
-                            </a>
-                            <a href="http://laravel.so/" target="_blank" rel="nofollow" title="Laravel So"
-                               style="padding: 3px;">
-                                <img src="http://laravel.so/img/site-logo.png" style="width:150px; margin: 3px 0;">
                             </a>
                             <a href="https://easywechat.org/" target="_blank" rel="nofollow" title="Easy We Chat"
                                style="padding: 3px;">

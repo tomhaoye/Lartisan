@@ -56,4 +56,3 @@
         </div>
     </div>
 @endsection
-<script src="http://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>

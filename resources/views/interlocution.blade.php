@@ -105,10 +105,6 @@
                                 <img src="https://dn-phphub.qbox.me/testerhome-logo.png"
                                      style="width:150px; margin: 3px 0;">
                             </a>
-                            <a href="http://laravel.so/" target="_blank" rel="nofollow" title="Laravel So"
-                               style="padding: 3px;">
-                                <img src="http://laravel.so/img/site-logo.png" style="width:150px; margin: 3px 0;">
-                            </a>
                             <a href="https://easywechat.org/" target="_blank" rel="nofollow" title="Easy We Chat"
                                style="padding: 3px;">
                                 <img src="https://easywechat.org/logo.svg" style="width:150px; margin: 3px 0;">

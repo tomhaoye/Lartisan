@@ -13,16 +13,17 @@ var elixir = require('laravel-elixir'),
  */
 
 var files = {
-    scripts:[
+    scripts: [
         'lib/jquery.min.js',
         'lib/bootstrap.min.js',
+        'lib/masonry.min.js',
         'lib/jquery.pjax.js',
         'lib/jquery.rotate.min.js',
         'lib/prism.js',
         'layouts',
         'topics'
     ],
-    styles:[
+    styles: [
         'lib/bootstrap.min.css',
         'lib/font-awesome.min.css',
         'lib/animate.css',
@@ -31,8 +32,7 @@ var files = {
         'layouts',
         'topics'
     ],
-    sass:[
-    ]
+    sass: []
 };
 
 //elixir.config.sourcemaps = false;
@@ -45,6 +45,6 @@ elixir(function (mix) {
     mix.scripts(files.scripts);
 });
 
-elixir(function(mix) {
+elixir(function (mix) {
     mix.version(['css/all.css', 'js/all.js']);
 });
