@@ -15,7 +15,7 @@
                     </div>
                     <div class="">
                         @foreach($topics as $topic)
-                            <a href="{{url('/topic/'.$topic->id)}}" data-pjax="no-pjax">
+                            <a href="{{url('/topic/'.$topic->id)}}">
                                 <div class="topic">
                                     <div class="topic-content">
                                         <div class="col-md-9">

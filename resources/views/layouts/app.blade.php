@@ -102,8 +102,9 @@
         <div id="jquery-accordion-menu" class="jquery-accordion-menu green">
             <ul id="demo-list">
 
-                <li><a href="{{ url('/index') }}"><i class="fa fa-home"></i>Home </a></li>
-                <li><a href="#"><i class="fa fa-glass"></i>Interlocution </a></li>
+                <li><a href="{{ url('/index') }}"><i class="fa fa-home"></i>Home</a></li>
+                <li><a href="{{ url('/flarum') }}"><i class="fa fa-glass"></i>Interlocution </a></li>
+                <li><a href="{{ route('users.show',Auth::id()) }}"><i class="fa fa-user"></i>Settings </a></li>
                 <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">12 </span>
                 </li>
                 <li><a href="#"><i class="fa fa-cog"></i>Services </a>
@@ -130,7 +131,6 @@
                         <li><a href="#">Programming </a></li>
                     </ul>
                 </li>
-                <li><a href="{{ route('users.show',Auth::id()) }}"><i class="fa fa-user"></i>Settings </a></li>
                 <li><a href="#"><i class="fa fa-envelope"></i>Notification </a></li>
 
             </ul>

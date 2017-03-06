@@ -42,6 +42,9 @@
                     });
                 }
             }
+
+            //prism
+            Prism.highlightAll();
         }
     };
     window.LARTISAN = LARTISAN;

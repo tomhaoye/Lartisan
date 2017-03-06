@@ -4,55 +4,32 @@
     <div class="container" id="pjax-container">
         <div class="row">
             <div class="col-sm-9 col-md-9  animated fadeIn">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <div class="btn-toolbar">
-                            <div class="btn-group">
-                                <a class="btn" href="#">
-                                    some
-                                </a>
-                                <a class="btn" href="#">
-                                    else
-                                </a>
-                                <a class="btn" href="#">
-                                    other
-                                </a>
-                                <a class="btn" href="#">
-                                    more
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel-body">
 
-                        <div class="col-lg-12" id="short_view">
-                            @foreach($topics as $topic)
-                                <a href="{{url('/topic/'.$topic->id)}}" data-pjax="no-pjax">
-                                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hvr-rotate water">
-                                        <div class="thumbnail">
-                                            <img src="{{$topic->image}}" alt="">
+                <div class="col-lg-12" id="short_view">
+                    @foreach($topics as $topic)
+                        <a href="{{url('/topic/'.$topic->id)}}">
+                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hvr-rotate water">
+                                <div class="thumbnail">
+                                    <img src="{{$topic->image}}" alt="">
 
-                                            <div class="caption">
-                                                <h3>{{$topic->title}}</h3>
-                                                <div class="content">
-                                                    <p>{{$topic->content}}</p>
-                                                </div>
-                                            </div>
+                                    <div class="caption">
+                                        <h3>{{$topic->title}}</h3>
+                                        <div class="content">
+                                            <p>{{$topic->content}}</p>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
+                            </div>
+                        </a>
 
-                            @endforeach
-                            @if(!count($topics))
-                                <a href="#" data-pjax="no-pjax">
-                                    <div class="col-lg-12 col-md-12 topic">
-                                        <h3>you can see nothing at all</h3>
-                                    </div>
-                                </a>
-                            @endif
-                        </div>
-
-                    </div>
+                    @endforeach
+                    @if(!count($topics))
+                        <a href="#" data-pjax="no-pjax">
+                            <div class="col-lg-12 col-md-12 topic">
+                                <h3>you can see nothing at all</h3>
+                            </div>
+                        </a>
+                    @endif
                 </div>
 
                 <div class="p-jax">

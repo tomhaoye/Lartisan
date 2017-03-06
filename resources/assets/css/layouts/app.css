@@ -58,10 +58,6 @@ a:hover {
     text-decoration: none;
 }
 
-.panel {
-    border: 1px solid #53e3a6;
-}
-
 #main_panel {
     min-height: 100%;
 }
