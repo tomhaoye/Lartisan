@@ -40,7 +40,7 @@
 
             <div class="col-sm-3 col-md-3">
                 <div class="col-sm-12 col-md-12">
-                    <a class="col-lg-12 btn btn-success thumbnail right-side"
+                    <a class="col-lg-12 btn btn-info thumbnail right-side"
                        href="{{route('topic.create')}}">create a new topic now</a>
                 </div>
 

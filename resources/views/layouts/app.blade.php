@@ -81,84 +81,17 @@
 </main>
 
 <div id="up_down">
-    <button class="btn" data-toggle="dropdown" href="#" role="button"
+    <button class="btn btn-info" data-toggle="dropdown" href="#" role="button"
             aria-haspopup="true" aria-expanded="false">
         GO <i class="glyphicon glyphicon-eject"></i>
     </button>
 </div>
-
-<nav id="menu" class="">
-    <a href="https://github.com/tomhaoye/Lartisan" target="_blank">
-        <header class="menu-header">
-            <div class="menu-header-title">
-                <h4>Lartisan</h4>
-            </div>
-        </header>
-    </a>
-
-    <section class="menu-section">
-
-
-        <div id="jquery-accordion-menu" class="jquery-accordion-menu green">
-            <ul id="demo-list">
-
-                <li><a href="{{ url('/index') }}"><i class="fa fa-home"></i>Home</a></li>
-                <li><a href="{{ url('/flarum') }}"><i class="fa fa-glass"></i>Interlocution </a></li>
-                <li><a href="{{ route('users.show',Auth::id()) }}"><i class="fa fa-user"></i>Settings </a></li>
-                <li><a href="#"><i class="fa fa-file-image-o"></i>Gallery </a><span class="jquery-accordion-menu-label">12 </span>
-                </li>
-                <li><a href="#"><i class="fa fa-cog"></i>Services </a>
-                    <ul class="submenu">
-                        <li><a href="#">Web Design </a></li>
-                        <li><a href="#">Hosting </a></li>
-                        <li><a href="#">Design </a>
-                            <ul class="submenu">
-                                <li><a href="#">Graphics </a></li>
-                                <li><a href="#">Vectors </a></li>
-                                <li><a href="#">Photoshop </a></li>
-                                <li><a href="#">Fonts </a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Consulting </a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-suitcase"></i>Portfolio </a>
-                    <ul class="submenu">
-                        <li><a href="#">Web Design </a></li>
-                        <li><a href="#">Graphics </a><span class="jquery-accordion-menu-label">10 </span>
-                        </li>
-                        <li><a href="#">Photoshop </a></li>
-                        <li><a href="#">Programming </a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-envelope"></i>Notification </a></li>
-
-            </ul>
-        </div>
-
-    </section>
-</nav>
 
 <!-- JavaScripts -->
 <script src="{{ elixir('js/all.js') }}"></script>
 <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
 <script src="http://cdn.bootcss.com/slideout/0.1.12/slideout.min.js"></script>
 <script src="http://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>
-<script>
-    var slideout = new Slideout({
-        'panel': document.getElementById('main_panel'),
-        'menu': document.getElementById('menu'),
-        'padding': 300,
-        'tolerance': 70
-    });
-
-    // Toggle button
-    document.querySelector('.toggle-button').addEventListener('click', function () {
-        slideout.toggle();
-    });
-
-    jQuery("#jquery-accordion-menu").jqueryAccordionMenu();
-</script>
 
 <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
