@@ -9,7 +9,7 @@
                     @foreach($topics as $topic)
                         <a href="{{url('/topic/'.$topic->id)}}">
                             <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hvr-rotate water">
-                                <div class="thumbnail">
+                                <div class="thumbnail" style="background-color: #f9f9f9">
                                     <img src="{{$topic->image}}" alt="">
 
                                     <div class="caption">

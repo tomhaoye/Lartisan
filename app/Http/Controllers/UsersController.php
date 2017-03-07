@@ -1,6 +1,7 @@
 <?php namespace App\Http\Controllers;
 
 
+use App\Models\Topics;
 use App\Models\User;
 
 class UsersController extends Controller
@@ -21,7 +22,8 @@ class UsersController extends Controller
     public function show($id)
     {
         $user = User::findOrfail($id);
-        return view('users.show',compact('user'));
+        $topics = Topics::whereUserId($user->id)->get();
+        return view('users.show', compact('user', 'topics'));
     }
 
     public function create()

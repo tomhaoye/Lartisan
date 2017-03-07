@@ -16,6 +16,7 @@ body {
 
 /* HTML5布局样式 直接对footer元素设置样式 */
 footer {
+    position: relative;
     bottom: 0;
     padding: 10px 0 10px 0;
     width: 100%;

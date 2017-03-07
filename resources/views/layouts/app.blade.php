@@ -31,7 +31,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand animated bounceInLeft toggle-button" data-pjax="no-pjax"
-                   href="#">
+                   href="/">
                     Lartisan
                 </a>
             </div>
@@ -73,11 +73,11 @@
         </div>
     </nav>
 
-    @yield('content')
+@yield('content')
 
-    <footer id="footer" class="footer">
+<!-- <footer id="footer" class="footer">
         <a href="/html/about.html">About</a>
-    </footer>
+    </footer> -->
 </main>
 
 <div id="up_down">
