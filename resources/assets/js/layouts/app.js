@@ -14,21 +14,18 @@
         },
 
         siteBoot: function () {
+            var self = this;
             NProgress.done();
+            self.pubu();
+            self.markdown();
+            self.prism();
+        },
 
-            //tag
+        tag: function () {
             $('#cloud').tagCloud();
+        },
 
-            //pubuliu
-            var $container = $('#short_view');
-            $container.imagesLoaded(function () {
-                $container.masonry({
-                    itemSelector: '.water',
-                    isAnimated: true
-                });
-            });
-
-            //markdown
+        markdown: function () {
             $('#create_content').keyup(function () {
                 parse();
             });
@@ -42,8 +39,19 @@
                     });
                 }
             }
+        },
 
-            //prism
+        pubu: function () {
+            var $container = $('#short_view');
+            $container.imagesLoaded(function () {
+                $container.masonry({
+                    itemSelector: '.water',
+                    isAnimated: true
+                });
+            });
+        },
+
+        prism: function () {
             Prism.highlightAll();
         }
     };
