@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <input type="hidden" id="uptoken" value="{{$uptoken}}">
     <div class="container" id="pjax-container">
         <div class="row">
 
@@ -39,13 +40,16 @@
                             </div>
                         </div>
                         <div class="form-group col-lg-12 col-sm-12 col-xs-12">
-                            <div class="col-lg-6">
-                                <button class="btn btn-info" onclick="return false;">upload image</button>
-                                <input style="opacity: 0;position: absolute;cursor: hand;width: 122px;height: 34px;bottom: 0"
-                                       type="file" name="image" id="image">
+                            <div class="col-lg-6 thumbnail">
+
+                                <p id="img_container">
+                                    <a id="img_pick" href="javascript:" class="btn btn-info" role="button">upload image</a>
+                                </p>
+                                <img id="img" style="height: 80px" src="/image/default_img.jpeg" alt="...">
+
                             </div>
                             <div class="col-lg-6">
-                                <input class="btn btn-default" type="submit" value="submit">
+                                <input class="btn btn-warning" type="submit" value="submit">
                             </div>
                         </div>
                         {!! csrf_field() !!}
@@ -55,4 +59,11 @@
 
         </div>
     </div>
+@endsection
+
+@section('js')
+    <script type="text/javascript" src="/js/qiniu/plupload/plupload.full.min.js"></script>
+    <script type="text/javascript" src="/js/qiniu/plupload/i18n/zh_CN.js"></script>
+    <script type="text/javascript" src="/js/qiniu/qiniu.js"></script>
+    <script type="text/javascript" src="/js/qiniu/ui.js"></script>
 @endsection

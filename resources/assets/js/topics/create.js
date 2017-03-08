@@ -1,4 +1,5 @@
-$(document).ready(function(){
+$(document).ready(function () {
+    LARTISAN.initQiniuImg();
     LARTISAN.markdown();
 });
 

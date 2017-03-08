@@ -29,7 +29,8 @@
     },
     "autoload": {
         "classmap": [
-            "database"
+            "database",
+            "app/Http/Larame"
         ],
         "psr-4": {
             "App\\": "app/"

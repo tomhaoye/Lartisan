@@ -10,7 +10,7 @@
     <link href="{{ elixir('css/all.css') }}" rel='stylesheet' type='text/css'>
     <link href="http://cdn.bootcss.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.css" rel="stylesheet">
-
+    @yield('css')
 </head>
 <body id="app-layout">
 
@@ -92,7 +92,7 @@
 <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
 <script src="http://cdn.bootcss.com/slideout/0.1.12/slideout.min.js"></script>
 <script src="http://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>
-
+@yield('js')
 <div>{!! Yuansir\Toastr\Facades\Toastr::render() !!}</div>
 
 </body>

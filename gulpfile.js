@@ -20,6 +20,7 @@ var files = {
         'lib/jquery.pjax.js',
         'lib/jquery.rotate.min.js',
         'lib/prism.js',
+        'tools.js',
         'layouts',
         'topics'
     ],

@@ -54,6 +54,10 @@
 
         prism: function () {
             Prism.highlightAll();
+        },
+
+        initQiniuImg: function () {
+            initUpload('img', 'img');
         }
     };
     window.LARTISAN = LARTISAN;
