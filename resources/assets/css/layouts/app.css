@@ -98,3 +98,7 @@ a:hover {
 .slideout-open .slideout-menu {
     display: block;
 }
+
+.main-color{
+    color: #319DE5;
+}

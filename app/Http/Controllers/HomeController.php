@@ -22,7 +22,8 @@ class HomeController extends Controller
         foreach ($topics as $topic) {
             $topic->content = left($topic->content, 100);
         }
-        return view('home', compact('topics'));
+        $hot_topics = Topics::select('id', 'title')->orderBy('view_count', 'desc')->limit(5)->get();
+        return view('home', compact('topics', 'hot_topics'));
     }
 
     public function flarum()

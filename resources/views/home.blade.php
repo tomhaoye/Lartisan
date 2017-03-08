@@ -45,9 +45,18 @@
                 </div>
 
                 <div class="col-sm-12 col-md-12">
-                    <a class="thumbnail loaded" href="#" target="_blank">
-                        <img src="image/bg3.jpg" width="700" height="438">
-                    </a>
+                    <div class="panel panel-default">
+                        <div class="panel-body text-center">
+                            <strong class="">what's hot</strong>
+                        </div>
+                        <ul class="list-group">
+                            @foreach($hot_topics as $hot_topic)
+                                <a href="{{url('/topic/'.$hot_topic->id)}}">
+                                    <li class="list-group-item">{{$hot_topic->title}}</li>
+                                </a>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-md-12">
