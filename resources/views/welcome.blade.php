@@ -10,7 +10,7 @@
                 <form class="form">
                     <input class="hide" type="text" placeholder="Username">
                     <input class="hide" type="password" placeholder="Password">
-                    <a class="btn btn-default" href="/html/about.html">Lartisan</a>
+                    <a class="btn btn-default btn-lg btn-block main-color bold lartisan" href="/html/about.html">Lartisan</a>
                 </form>
             </div>
 

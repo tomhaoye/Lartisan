@@ -1,10 +1,11 @@
-.create_content{
+.create_content {
     height: 350px;
     line-height: 150%;
     font-size: larger;
 }
 
-.markdown_content{
+.markdown_content {
+    padding: 10px 15px;
     height: 350px;
     border: 1px dotted #dfdfdf;
     border-radius: 5px;
