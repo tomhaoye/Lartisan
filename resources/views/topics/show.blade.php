@@ -4,7 +4,7 @@
     <div class="container" id="pjax-container">
         <div class="row">
 
-            <div class="col-sm-12 col-md-10  animated fadeIn">
+            <div class="col-sm-12 col-md-9  animated fadeIn">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <a class="hvr-icon-back" href={{URL::previous()}}>
@@ -29,13 +29,18 @@
             </div>
 
 
-            <div class="col-sm-12 col-md-2 animated fadeIn">
-                <a class="thumbnail loaded" href="#" target="_blank">
-                    <img src="/image/bg3.jpg" width="700"height="438">
-                </a>
+            <div class="col-sm-12 col-md-3 animated fadeIn">
+                <div class="panel panel-default">
+                    <div class="panel-heading text-center">
+                        <h4 class="panel-title">author info</h4>
+                    </div>
+                    <div class="panel-body text-center">
+                        <p>{{$topic->user()->getResults()->name}}</p>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-sm-12 col-md-10">
+            <div class="col-sm-12 col-md-9">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         Comment:
@@ -63,19 +68,20 @@
                             </div>
                             <div class="media-body">
                                 <h4 class="media-heading">geekeek</h4>
-                                <!-- todo get the @ user id-->
-                                 <a href="{{route('users.show',1)}}">@jeffrey way</a> i want to eat something...
+                            <!-- todo get the @ user id-->
+                                <a href="{{route('users.show',1)}}">@jeffrey way</a> i want to eat something...
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-10">
+            <div class="col-sm-12 col-md-9">
                 <form action="" method="post">
                     <div class="form-top">
                         {!!csrf_field()!!}
-                        <textarea class="col-sm-12 col-md-12 form-control" placeholder="markdown here :-)" rows="5" name="comment"></textarea>
+                        <textarea class="col-sm-12 col-md-12 form-control" placeholder="markdown here :-)" rows="5"
+                                  name="comment"></textarea>
                         <input class="btn btn-primary" type="submit" value="comment">
                     </div>
                 </form>

@@ -23,6 +23,11 @@ class Topics extends Model
 
     public function sort()
     {
-        return $this->hasOne('App\Models\TopicsSort','id','sort_id');
+        return $this->hasOne('App\Models\TopicsSort', 'id', 'sort_id');
+    }
+
+    public function user()
+    {
+        return $this->hasOne('App\Models\User', 'id', 'user_id');
     }
 }
