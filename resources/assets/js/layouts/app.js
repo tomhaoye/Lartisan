@@ -46,7 +46,8 @@
             $container.imagesLoaded(function () {
                 $container.masonry({
                     itemSelector: '.water',
-                    isAnimated: true
+                    isAnimated: true,
+                    isFitWidth: true
                 });
             });
         },

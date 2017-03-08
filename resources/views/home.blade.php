@@ -8,7 +8,7 @@
                 <div class="col-lg-12" id="short_view">
                     @foreach($topics as $topic)
                         <a href="{{url('/topic/'.$topic->id)}}">
-                            <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12 hvr-rotate water">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hvr-rotate water">
                                 <div class="thumbnail" style="background-color: #f9f9f9">
                                     <img src="{{$topic->image}}" alt="">
 
