@@ -43,9 +43,11 @@
                             <div class="col-lg-6 thumbnail">
 
                                 <p id="img_container">
-                                    <a id="img_pick" href="javascript:" class="btn btn-info" role="button">upload image</a>
+                                    <a id="img_pick" href="javascript:" class="btn btn-info" role="button">upload
+                                        image</a>
                                 </p>
                                 <img id="img" style="height: 80px" src="/image/default_img.jpeg" alt="...">
+                                <input type="hidden" name="image" id="img_hidden" value="">
 
                             </div>
                             <div class="col-lg-6">
@@ -59,11 +61,4 @@
 
         </div>
     </div>
-@endsection
-
-@section('js')
-    <script type="text/javascript" src="/js/qiniu/plupload/plupload.full.min.js"></script>
-    <script type="text/javascript" src="/js/qiniu/plupload/i18n/zh_CN.js"></script>
-    <script type="text/javascript" src="/js/qiniu/qiniu.js"></script>
-    <script type="text/javascript" src="/js/qiniu/ui.js"></script>
 @endsection

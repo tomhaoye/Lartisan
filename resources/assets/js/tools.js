@@ -50,10 +50,11 @@ function initUpload(which, img_id) {
                 var domain = up.getOption('domain');
                 var res = JSON.parse(info);
                 var sourceLink = domain + res.key + '?imageView2/1/w/80/h/80';
-                $('#' + img_id).attr("src", sourceLink)
-                $('#' + img_id).attr("data-name", res.key)
-                console.log(sourceLink)
-                console.log(res.key)
+                $('#' + img_id).attr("src", sourceLink);
+                $('#' + img_id).attr("data-name", res.key);
+                $('#' + which + '_hidden').val(res.key);
+                console.log(sourceLink);
+                console.log(res.key);
             },
             'Error': function (up, err, errTip) {
                 $('#' + which + '_pick').html(errTip);

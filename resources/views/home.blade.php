@@ -10,8 +10,10 @@
                         <a href="{{url('/topic/'.$topic->id)}}">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hvr-rotate water">
                                 <div class="thumbnail" style="background-color: #f9f9f9">
-                                    <img src="{{$topic->image}}" alt="">
-
+                                    @if(!empty($topic->image))
+                                        <img src="{{env('IMG_PREFIX').$topic->image.'?imageView2/1/w/400/h/200'}}"
+                                             alt="">
+                                    @endif
                                     <div class="caption">
                                         <h3>{{$topic->title}}</h3>
                                         <div class="content">

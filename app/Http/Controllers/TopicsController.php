@@ -47,7 +47,7 @@ class TopicsController extends Controller
     public function store(Request $request)
     {
         // todo with laravel5.2 new validation & image upoload
-        $data = $request->only(array('title', 'content', 'type_id', 'sort_id'));
+        $data = $request->only(array('title', 'content', 'type_id', 'sort_id', 'image'));
         $data['user_id'] = Auth::user()->id;
         $topic = Topics::create($data);
         return redirect('/topic/' . $topic->id);

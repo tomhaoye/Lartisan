@@ -19,6 +19,7 @@
             self.pubu();
             self.markdown();
             self.prism();
+            self.initQiniuImg();
         },
 
         tag: function () {

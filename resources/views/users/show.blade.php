@@ -14,7 +14,7 @@
                             @foreach($topics as $topic)
                                 <a href="{{url('/topic/'.$topic->id)}}">
                                     <div class="topic">
-                                        <div class="topic-content thumbnail" style="border: 1px solid #319DE5">
+                                        <div class="topic-content" style="border-bottom: 1px solid #aaddff">
                                             <div class="col-md-9">
                                                 <div class="date">
                                                     {{$topic->created_at}}
@@ -32,7 +32,7 @@
                                             </div>
                                             <div class="topic-img col-md-3 visible-md visible-lg">
                                                 <div class="img-detail thumbnail" style="border: none;!important;">
-                                                    <img src="{{empty($topic->image)?'/image/click.jpg':$topic->image}}">
+                                                    <img src="{{empty($topic->image)?'/image/default_img.jpeg':env('IMG_PREFIX').$topic->image.'?imageView2/1/w/141/h/106'}}">
                                                 </div>
                                             </div>
                                         </div>
