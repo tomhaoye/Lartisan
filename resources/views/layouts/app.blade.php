@@ -15,7 +15,7 @@
 <body id="app-layout">
 
 <main id="main_panel">
-    <nav class="navbar navbar-default" id="navbar">
+    <nav class="navbar navbar-default navbar-color" id="navbar">
         <div class="container">
 
             <div class="navbar-header">

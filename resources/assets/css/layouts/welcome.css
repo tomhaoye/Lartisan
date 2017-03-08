@@ -78,6 +78,7 @@ body :-ms-input-placeholder {
     -webkit-transition-timing-function: ease-in-put;
     transition-timing-function: ease-in-put;
     font-weight: 200;
+    color: #f9f9f9;
 }
 
 .contain form {
