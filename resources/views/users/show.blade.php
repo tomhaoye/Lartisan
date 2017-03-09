@@ -51,7 +51,21 @@
                     </div>
                 </div>
             </div>
-
+            <div class="col-lg-4">
+                <div class="panel panel-default">
+                    <div class="list-group">
+                        <a href="#" class="list-group-item list-group-item-info">
+                            information
+                        </a>
+                        <div class="panel-body text-center thumbnail" style="border: none">
+                            <img width="160" src="{{empty($user->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$user->avatar}}"
+                                 alt="avatar">
+                            <p>{{$user->name}}</p>
+                            <p>{{$user->email}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="list-group">
