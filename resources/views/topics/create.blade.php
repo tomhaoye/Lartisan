@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <input type="hidden" id="uptoken" value="{{$uptoken}}">
     <div class="container" id="pjax-container">
+        <input type="hidden" id="uptoken" value="{{$uptoken}}">
         <div class="row">
 
             <div class="col-md-12">

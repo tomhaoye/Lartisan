@@ -89,6 +89,7 @@
 
 <!-- JavaScripts -->
 <script src="{{ elixir('js/all.js') }}"></script>
+<script src="{{ elixir('js/qiniu.js') }}"></script>
 <script src="http://cdn.bootcss.com/nprogress/0.2.0/nprogress.min.js"></script>
 <script src="http://cdn.bootcss.com/slideout/0.1.12/slideout.min.js"></script>
 <script src="http://cdn.bootcss.com/marked/0.3.5/marked.min.js"></script>

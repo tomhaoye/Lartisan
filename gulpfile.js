@@ -13,6 +13,12 @@ var elixir = require('laravel-elixir'),
  */
 
 var files = {
+    qiniu: [
+        'qiniu/plupload/plupload.full.min.js',
+        'qiniu/plupload/i18n/zh_CN.js',
+        'qiniu/qiniu.js',
+        'qiniu/ui.js'
+    ],
     scripts: [
         'lib/jquery.min.js',
         'lib/bootstrap.min.js',
@@ -20,7 +26,6 @@ var files = {
         'lib/jquery.pjax.js',
         'lib/jquery.rotate.min.js',
         'lib/prism.js',
-        'qiniu',
         'tools.js',
         'layouts',
         'topics'
@@ -40,13 +45,8 @@ var files = {
 //elixir.config.sourcemaps = false;
 
 elixir(function (mix) {
+    mix.scripts(files.qiniu, 'public/js/qiniu.js');
     mix.styles(files.styles);
-});
-
-elixir(function (mix) {
     mix.scripts(files.scripts);
-});
-
-elixir(function (mix) {
-    mix.version(['css/all.css', 'js/all.js']);
+    mix.version(['css/all.css', 'js/all.js', 'js/qiniu.js']);
 });
