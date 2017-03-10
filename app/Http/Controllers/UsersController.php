@@ -48,7 +48,7 @@ class UsersController extends Controller
 
     public function updateAvatar($id, Request $request)
     {
-    }git
+    }
 
     public function update($id)
     {
