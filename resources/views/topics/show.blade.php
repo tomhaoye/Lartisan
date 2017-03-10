@@ -34,8 +34,12 @@
                     <div class="panel-heading text-center">
                         <h4 class="panel-title">author info</h4>
                     </div>
-                    <div class="panel-body text-center">
+                    <div class="panel-body text-center thumbnail" style="border: none">
+                        <img width="160"
+                             src="{{empty($topic->user()->getResults()->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$topic->user()->getResults()->avatar}}"
+                             alt="avatar">
                         <p>{{$topic->user()->getResults()->name}}</p>
+                        <p>{{$topic->user()->getResults()->email}}</p>
                     </div>
                 </div>
             </div>

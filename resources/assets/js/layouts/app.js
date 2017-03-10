@@ -69,17 +69,7 @@ $(document).ready(function () {
 
     var height = $(window).height();
     $('#main_panel').css({'min-height': height});
-});
 
-
-$('#up_down').on('click', function () {
-    event.preventDefault();
-    $("html, body").animate({
-        scrollTop: 0
-    }, 300);
-});
-
-$(document).ready(function () {
     var top = 300;
     $("#up_down").hide();
     $(function () {
@@ -91,6 +81,13 @@ $(document).ready(function () {
                 $("#up_down").fadeOut(500);
             }
         });
+    });
+
+    $('#up_down').on('click', function () {
+        event.preventDefault();
+        $("html, body").animate({
+            scrollTop: 0
+        }, 300);
     });
 });
 

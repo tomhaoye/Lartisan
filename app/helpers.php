@@ -40,8 +40,18 @@ function left($str, $len, $charset = "utf-8")
     return $result_str;
 }
 
-
-function tab_hover()
+function timeAgo($timeStr, $nowTimeStr)
 {
-    
+    $timeDiff = $nowTimeStr - $timeStr;
+    if ($timeDiff < 60) {
+        return $timeDiff . ' seconds ago';
+    } elseif ($timeDiff < 3600) {
+        return ceil($timeDiff / 60) . ' minutes ago';
+    } elseif ($timeDiff < (3600 * 24)) {
+        return ceil($timeDiff / 3600) . ' hours ago';
+    } elseif ($timeDiff < (3600 * 24 * 30)) {
+        return ceil($timeDiff / (3600 * 24)) . ' days ago';
+    } else {
+        return ceil($timeDiff / (3600 * 24 * 30)) . ' months ago';
+    }
 }
