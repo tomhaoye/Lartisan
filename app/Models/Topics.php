@@ -28,6 +28,6 @@ class Topics extends Model
 
     public function user()
     {
-        return $this->hasOne('App\Models\User', 'id', 'user_id');
+        return $this->hasOne('App\User', 'id', 'user_id');
     }
 }

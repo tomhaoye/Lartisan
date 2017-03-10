@@ -10,9 +10,11 @@
                             information
                         </a>
                         <div class="panel-body text-center thumbnail" style="border: none">
-                            <img width="160"
-                                 src="{{empty($user->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$user->avatar}}"
-                                 alt="avatar">
+                            <a href="{{ route('users.edit_avatar', $user->id) }}">
+                                <img width="160"
+                                     src="{{empty($user->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$user->avatar}}"
+                                     alt="avatar">
+                            </a>
                             <p>{{$user->name}}</p>
                             <p>{{$user->email}}</p>
                         </div>

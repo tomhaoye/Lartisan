@@ -51,6 +51,8 @@ Route::group(['middleware' => 'web'], function () {
     Route::resource('topic', 'TopicsController', ['only' => ['index', 'show']]);
 
     Route::resource('users', 'UsersController');
+    Route::get('/users/{id}/edit_avatar', 'UsersController@editAvatar')->name('users.edit_avatar');
+    Route::post('/users/{id}/update_avatar', 'UsersController@updateAvatar')->name('users.update_avatar');
 });
 
 
