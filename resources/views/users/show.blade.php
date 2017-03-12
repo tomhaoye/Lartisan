@@ -12,7 +12,7 @@
                         <div class="panel-body text-center thumbnail" style="border: none">
                             <a href="{{ route('users.edit_avatar', $user->id) }}">
                                 <img width="160"
-                                     src="{{empty($user->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$user->avatar}}"
+                                     src="{{empty($user->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$user->avatar.'?imageView2/1/w/160'}}"
                                      alt="avatar">
                             </a>
                             <p>{{$user->name}}</p>

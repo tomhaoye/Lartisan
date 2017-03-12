@@ -1,9 +1,8 @@
 <?php namespace App\Http\Controllers;
 
-
-use App\Http\Requests\Request;
 use App\Models\Topics;
 use App\User;
+use Illuminate\Http\Request;
 
 class UsersController extends Controller
 {
@@ -43,11 +42,19 @@ class UsersController extends Controller
     {
         $user = User::findOrFail($id);
         $this->authorize('update', $user);
-        return view('users.edit_avatar', compact('user'));
+        $uptoken = \QiniuHelper::qiniuToken();
+        return view('users.edit_avatar', compact('user', 'uptoken'));
     }
 
     public function updateAvatar($id, Request $request)
     {
+        $user = User::findOrFail($id);
+        $this->authorize('update', $user);
+        $avatar = $request->get('avatar');
+        $user->avatar = $avatar;
+        $user->update();
+        $uptoken = \QiniuHelper::qiniuToken();
+        return view('users.edit_avatar', compact('user', 'uptoken'));
     }
 
     public function update($id)

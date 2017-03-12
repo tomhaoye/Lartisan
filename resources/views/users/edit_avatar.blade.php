@@ -2,6 +2,8 @@
 
 @section('content')
     <div class="container" id="pjax-container">
+        <input type="hidden" id="uptoken" value="{{$uptoken}}">
+
         <div class="row">
             <div class="col-lg-4">
                 <div class="panel panel-default">
@@ -9,7 +11,7 @@
                         <a href="#" class="list-group-item list-group-item-info">
                             there are something here
                         </a>
-                        <a href="#" class="list-group-item">account</a>
+                        <a href="{{ route('users.edit_avatar', $user->id) }}" class="list-group-item">edit avatar</a>
                         <a href="#" class="list-group-item">topics</a>
                         <a href="#" class="list-group-item">something</a>
                         <a href="#" class="list-group-item">awesome</a>
@@ -24,15 +26,19 @@
                     </div>
                     <div class="panel-body">
                         <div class="">
-
-                            <p id="img_container">
-                                <a id="img_pick" href="javascript:" class="btn btn-info" role="button">upload
-                                    image</a>
-                            </p>
-                            <img id="img" src="/image/default_img.jpeg" alt="...">
-                            <input type="hidden" name="image" id="img_hidden" value="">
-                            <p></p>
-                            <input type="button" class="btn btn-warning" id="save_avatar" value="save">
+                            <form action="{{ route('users.update_avatar', $user->id) }}" method="post">
+                                <p id="img_container">
+                                    <a id="img_pick" href="javascript:" class="btn btn-info" role="button">upload
+                                        avatar</a>
+                                </p>
+                                <img class="thumbnail" height="300" width="300" id="img"
+                                     src="{{empty($user->avatar)?'/image/default_avatar.jpeg':env('IMG_PREFIX').$user->avatar.'?imageView2/1/w/300/h/300'}}"
+                                     alt="...">
+                                <input type="hidden" name="avatar" id="img_hidden" value="">
+                                <p></p>
+                                <input type="submit" class="btn btn-warning" id="save_avatar" value="save">
+                                {!! csrf_field() !!}
+                            </form>
                         </div>
                     </div>
                 </div>
