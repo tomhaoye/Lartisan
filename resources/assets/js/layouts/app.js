@@ -20,6 +20,7 @@
             self.markdown();
             self.prism();
             self.initQiniuImg();
+            self.banBackward();
         },
 
         tag: function () {
@@ -59,6 +60,13 @@
 
         initQiniuImg: function () {
             initUpload('img', 'img');
+        },
+
+        banBackward: function () {
+            history.pushState(null, null, document.URL);
+            window.addEventListener('popstate', function () {
+                history.pushState(null, null, document.URL);
+            });
         }
     };
     window.LARTISAN = LARTISAN;
