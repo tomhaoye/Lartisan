@@ -35,9 +35,11 @@
                         <h4 class="panel-title">author info</h4>
                     </div>
                     <div class="panel-body text-center thumbnail" style="border: none">
-                        <img width="160"
-                             src="{{empty($topic->user()->getResults()->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$topic->user()->getResults()->avatar}}"
-                             alt="avatar">
+                        <a href="{{route('users.show',$topic->user()->getResults()->id)}}">
+                            <img width="160"
+                                 src="{{empty($topic->user()->getResults()->avatar)?'/image/default_img.jpeg':env('IMG_PREFIX').$topic->user()->getResults()->avatar}}"
+                                 alt="avatar">
+                        </a>
                         <p>{{$topic->user()->getResults()->name}}</p>
                         <p>{{$topic->user()->getResults()->email}}</p>
                     </div>
@@ -53,7 +55,7 @@
                     @foreach($topic->comments as $comment)
                         <div class="comment-body">
                             <div class="media">
-                                <div class="media-left media-middle">
+                                <div class="media-left">
                                     <a href="{{route('users.show',$comment->user->id)}}">
                                         <img class="media-object" height="60" width="60"
                                              src="{{empty($comment->user->avatar)?'/image/default_avatar.jpg':env('IMG_PREFIX').$comment->user->avatar}}"
@@ -61,8 +63,9 @@
                                     </a>
                                 </div>
                                 <div class="media-body">
-                                    <a class="at-this-one" href=""><h4 class="media-heading">{{$comment->user->name}}</h4></a>
-                                    {{$comment->content}}
+                                    <a class="at-this-one" href="javascript:" data-name="{{$comment->user->name}}"><h5
+                                                class="media-heading">{{$comment->user->name}}</h5></a>
+                                    {!!$comment->content!!}
                                 </div>
                             </div>
                         </div>
@@ -74,7 +77,8 @@
                 <form action="" method="post">
                     <div class="form-top">
                         {!!csrf_field()!!}
-                        <textarea class="col-sm-12 col-md-12 form-control" placeholder="markdown here :-)" rows="5"
+                        <textarea id="comment" class="col-sm-12 col-md-12 form-control" placeholder="markdown here :-)"
+                                  rows="5"
                                   name="comment"></textarea>
                         <input class="btn btn-primary" type="submit" value="comment">
                     </div>

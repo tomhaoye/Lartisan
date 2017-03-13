@@ -35,6 +35,9 @@ class TopicsController extends Controller
             ->first();
 
         $topic->content = $markdown->text($topic->content);
+        foreach ($topic->comments as $comment) {
+            $comment->content = $markdown->text($comment->content);
+        }
         return view('topics.show', compact('topic'));
     }
 
