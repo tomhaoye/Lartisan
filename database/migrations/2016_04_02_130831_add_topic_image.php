@@ -26,5 +26,8 @@ class AddTopicImage extends Migration
     public function down()
     {
         //
+        Schema::table('topics',function(Blueprint $table){
+            $table->removeColumn('image');
+        });
     }
 }

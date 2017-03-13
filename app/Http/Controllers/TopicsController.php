@@ -30,7 +30,9 @@ class TopicsController extends Controller
 
     public function show($id, Parsedown $markdown)
     {
-        $topic = Topics::whereId($id)->first();
+        $topic = Topics::with('comments.user')
+            ->whereId($id)
+            ->first();
 
         $topic->content = $markdown->text($topic->content);
         return view('topics.show', compact('topic'));

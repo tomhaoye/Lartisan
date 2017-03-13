@@ -50,33 +50,23 @@
                         Comment:
                     </div>
                     <!-- todo foreach -->
-                    <div class="comment-body">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <a href="#">
-                                    <img class="media-object" height="60" width="60" src="/image/bg1.jpg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">jeffrey way</h4>
-                                would you like to say something?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="comment-body">
-                        <div class="media">
-                            <div class="media-left media-middle">
-                                <a href="#">
-                                    <img class="media-object" height="60" width="60" src="/image/bg4.jpg" alt="...">
-                                </a>
-                            </div>
-                            <div class="media-body">
-                                <h4 class="media-heading">geekeek</h4>
-                            <!-- todo get the @ user id-->
-                                <a href="{{route('users.show',1)}}">@jeffrey way</a> i want to eat something...
+                    @foreach($topic->comments as $comment)
+                        <div class="comment-body">
+                            <div class="media">
+                                <div class="media-left media-middle">
+                                    <a href="{{route('users.show',$comment->user->id)}}">
+                                        <img class="media-object" height="60" width="60"
+                                             src="{{empty($comment->user->avatar)?'/image/default_avatar.jpg':env('IMG_PREFIX').$comment->user->avatar}}"
+                                             alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <a class="at-this-one" href=""><h4 class="media-heading">{{$comment->user->name}}</h4></a>
+                                    {{$comment->content}}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
 
