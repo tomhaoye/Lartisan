@@ -20,7 +20,7 @@
             self.markdown();
             self.prism();
             self.initQiniuImg();
-            self.banBackward();
+            // self.banBackward();
         },
 
         tag: function () {
@@ -63,9 +63,8 @@
         },
 
         banBackward: function () {
-            history.pushState(null, null, document.URL);
             window.addEventListener('popstate', function () {
-                history.pushState(null, null, document.URL);
+                history.pushState(null, '', document.URL);
             });
         }
     };

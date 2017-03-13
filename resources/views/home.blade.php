@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-sm-9 col-md-9  animated fadeIn">
 
-                <div class="col-lg-12" id="short_view">
+                <div id="short_view">
                     @foreach($topics as $topic)
                         <a href="{{url('/topic/'.$topic->id)}}">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 hvr-rotate water">
@@ -32,10 +32,7 @@
                             </div>
                         </a>
                     @endif
-                </div>
 
-                <div class="p-jax">
-                    {{$topics->links()}}
                 </div>
 
             </div>
@@ -100,6 +97,10 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div class="p-jax col-lg-12">
+                {{$topics->links()}}
             </div>
 
         </div>
