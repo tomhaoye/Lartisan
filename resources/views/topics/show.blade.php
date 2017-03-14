@@ -49,11 +49,11 @@
             <div class="col-sm-12 col-md-9">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        Comment:
+                        Comment
                     </div>
                     <!-- todo foreach -->
-                    @foreach($topic->comments as $comment)
-                        <div class="comment-body">
+                    @foreach($topic->comments as $index=>$comment)
+                        <div class="comment-body" id="{{($index+1==count($topic->comments))?'last-comment':''}}">
                             <div class="media">
                                 <div class="media-left">
                                     <a href="{{route('users.show',$comment->user->id)}}">
@@ -74,12 +74,13 @@
             </div>
 
             <div class="col-sm-12 col-md-9">
-                <form action="" method="post">
+                <form action="{{route('comment.store')}}" method="post">
                     <div class="form-top">
                         {!!csrf_field()!!}
-                        <textarea id="comment" class="col-sm-12 col-md-12 form-control" placeholder="markdown here :-)"
+                        <input type="hidden" name="topic_id" value="{{$topic->id}}">
+                        <textarea id="content" class="col-sm-12 col-md-12 form-control" placeholder="markdown here :-)"
                                   rows="5"
-                                  name="comment"></textarea>
+                                  name="content"></textarea>
                         <input class="btn btn-primary" type="submit" value="comment">
                     </div>
                 </form>

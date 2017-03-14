@@ -38,6 +38,7 @@ Route::get('/users/{users}', function (App\User $users) {
 
 Route::group(['middleware' => ['web', 'auth']], function () {
     Route::resource('topic', 'TopicsController', ['except' => ['index', 'show']]);
+    Route::post('comment', 'CommentController@store')->name('comment.store');
     Route::get('/users/{id}/edit_avatar', 'UsersController@editAvatar')->name('users.edit_avatar');
     Route::post('/users/{id}/update_avatar', 'UsersController@updateAvatar')->name('users.update_avatar');
 });
