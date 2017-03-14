@@ -1,5 +1,6 @@
 <?php namespace App\Http\Controllers;
 
+use App\Models\Comments;
 use App\Models\Topics;
 use App\User;
 use Illuminate\Http\Request;
@@ -23,7 +24,8 @@ class UsersController extends Controller
     {
         $user = User::findOrfail($id);
         $topics = Topics::whereUserId($user->id)->get();
-        return view('users.show', compact('user', 'topics'));
+        $comments = Comments::whereUserId($user->id)->get();
+        return view('users.show', compact('user', 'topics', 'comments'));
     }
 
     public function create()

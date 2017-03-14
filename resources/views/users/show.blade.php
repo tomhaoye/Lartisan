@@ -65,6 +65,37 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        latest comment
+                    </div>
+                    <div class="panel-body">
+                        <div class="article">
+                            @foreach($comments as $comment)
+                                <div class="simple-item">
+                                    <a href="{{url('/topic/'.$comment->topic_id)}}">
+                                        {{$comment->content}}
+                                    </a>
+                                    <span>
+                                        <span>｜</span>
+                                        <span class="time-ago">{{timeAgo(strtotime($comment->created_at),$_SERVER['REQUEST_TIME'])}}</span>
+                                    </span>
+                                </div>
+                            @endforeach
+                            @if(!count($comments))
+                                <a href="#" data-pjax="no-pjax">
+                                    <div class="col-lg-12 col-md-12 topic">
+                                        <h3>you can see nothing at all</h3>
+                                    </div>
+                                </a>
+                            @endif
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
