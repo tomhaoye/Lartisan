@@ -23,8 +23,8 @@ class UsersController extends Controller
     public function show($id)
     {
         $user = User::findOrfail($id);
-        $topics = Topics::whereUserId($user->id)->get();
-        $comments = Comments::whereUserId($user->id)->get();
+        $topics = Topics::whereUserId($user->id)->limit(10)->get();
+        $comments = Comments::whereUserId($user->id)->limit(10)->get();
         return view('users.show', compact('user', 'topics', 'comments'));
     }
 
