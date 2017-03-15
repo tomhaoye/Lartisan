@@ -6,7 +6,7 @@
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-info">
+                        <a href="#" class="list-group-item list-group-item-heading">
                             information
                         </a>
                         <div class="panel-body text-center thumbnail" style="border: none">
@@ -23,19 +23,21 @@
 
                 <div class="panel panel-default">
                     <div class="list-group">
-                        <a href="#" class="list-group-item list-group-item-info">
+                        <a href="#" class="list-group-item list-group-item-heading">
                             there are something here
                         </a>
-                        <a href="#" class="list-group-item">account</a>
-                        <a href="#" class="list-group-item">topics</a>
-                        <a href="#" class="list-group-item">something</a>
-                        <a href="#" class="list-group-item">awesome</a>
+                        <div class="panel-body">
+                            <a href="#" class="list-group-item">account</a>
+                            <a href="#" class="list-group-item">topics</a>
+                            <a href="#" class="list-group-item">something</a>
+                            <a href="#" class="list-group-item">awesome</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-8">
-                <div class="panel panel-info">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         latest article
                     </div>
@@ -67,7 +69,7 @@
                 </div>
 
 
-                <div class="panel panel-info">
+                <div class="panel panel-default">
                     <div class="panel-heading">
                         latest comment
                     </div>
