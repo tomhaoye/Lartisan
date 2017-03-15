@@ -47,8 +47,10 @@
                         <div class="article">
                             @foreach($topics as $topic)
                                 <div class="simple-item">
-                                    <a href="{{url('/topic/'.$topic->id)}}">
-                                        {{$topic->title}}
+                                    <a href="{{url('/topic/'.$topic->id)}}" class="col-lg-8">
+                                        <div class="panel-href-item">
+                                            {{$topic->title}}
+                                        </div>
                                     </a>
                                     <span>
                                         <span>｜</span>
@@ -60,7 +62,7 @@
                             @endforeach
                             @if(!count($topics))
                                 <a href="#" data-pjax="no-pjax">
-                                    <div class="col-lg-12 col-md-12 topic">
+                                    <div class="col-lg-12 col-md-12">
                                         <h3>you can see nothing at all</h3>
                                     </div>
                                 </a>
@@ -81,8 +83,10 @@
                         <div class="article">
                             @foreach($comments as $comment)
                                 <div class="simple-item">
-                                    <a href="{{url('/topic/'.$comment->topic_id)}}">
-                                        {{$comment->content}}
+                                    <a href="{{url('/topic/'.$comment->topic_id)}}" class="col-lg-8">
+                                        <div class="panel-href-item">
+                                            {{$comment->content}}
+                                        </div>
                                     </a>
                                     <span>
                                         <span>｜</span>
@@ -92,7 +96,7 @@
                             @endforeach
                             @if(!count($comments))
                                 <a href="#" data-pjax="no-pjax">
-                                    <div class="col-lg-12 col-md-12 topic">
+                                    <div class="col-lg-12 col-md-12">
                                         <h3>you can see nothing at all</h3>
                                     </div>
                                 </a>

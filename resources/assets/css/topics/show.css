@@ -44,3 +44,9 @@ textarea {
 a {
     color: #31708f;
 }
+
+.panel-href-item {
+    width: auto;
+    max-height: 40px;
+    overflow: hidden;
+}
