@@ -24,8 +24,10 @@
 
             <div class="col-lg-8">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        upload you avatar
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            upload you avatar
+                        </a>
                     </div>
                     <div class="panel-body">
                         <div class="">

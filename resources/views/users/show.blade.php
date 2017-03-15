@@ -38,8 +38,10 @@
 
             <div class="col-lg-8">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        latest article
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            latest article
+                        </a>
                     </div>
                     <div class="panel-body">
                         <div class="article">
@@ -70,8 +72,10 @@
 
 
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        latest comment
+                    <div class="list-group">
+                        <a href="#" class="list-group-item">
+                            latest comment
+                        </a>
                     </div>
                     <div class="panel-body">
                         <div class="article">
