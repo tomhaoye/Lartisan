@@ -33,6 +33,7 @@ class TopicsController extends Controller
         $topic = Topics::with('comments.user')
             ->whereId($id)
             ->first();
+        if (empty($topic)) abort(404);
 
         $topic->content = $markdown->text($topic->content);
         foreach ($topic->comments as $comment) {
