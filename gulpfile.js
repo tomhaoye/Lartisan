@@ -28,7 +28,8 @@ var files = {
         'lib/prism.js',
         'tools.js',
         'layouts',
-        'topics'
+        'topics',
+        'users'
     ],
     styles: [
         'lib/bootstrap.min.css',

@@ -53,6 +53,7 @@
                                         </div>
                                     </a>
                                     <span>
+                                        <a href="{{route('topic.edit',$topic->id)}}">编辑</a>
                                         <span>｜</span>
                                         {{$topic->sort()->getResults()->sort}}
                                         <span>｜</span>

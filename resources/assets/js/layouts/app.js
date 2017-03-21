@@ -20,6 +20,7 @@
             self.markdown();
             self.prism();
             self.initQiniuImg();
+            self.atSomeOne();
             // self.banBackward();
         },
 
@@ -65,6 +66,12 @@
         banBackward: function () {
             window.addEventListener('popstate', function () {
                 history.pushState(null, '', document.URL);
+            });
+        },
+
+        atSomeOne: function () {
+            $('body').on('click', '.at-this-one', function () {
+                $('#content').append('@' + $(this).attr('data-name') + '\t');
             });
         }
     };

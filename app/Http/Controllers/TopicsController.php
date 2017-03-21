@@ -61,10 +61,11 @@ class TopicsController extends Controller
 
     public function edit($id)
     {
+        $uptoken = \QiniuHelper::qiniuToken();
         $topic = Topics::findOrfail($id);
         $sort = TopicsSort::all();
         $type = TopicsType::all();
-        return view('topics.edit', compact('topic', 'type', 'sort'));
+        return view('topics.edit', compact('topic', 'type', 'sort', 'uptoken'));
     }
 
     public function update($id)
