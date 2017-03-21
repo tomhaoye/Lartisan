@@ -34,9 +34,7 @@
                         <div class="form-group col-lg-6 col-sm-12 col-xs-12">
                             <label for="content">content</label>
                             <textarea class="col-lg-12 col-sm-12 col-xs-12 create_content" name="content"
-                                      id="create_content">
-                                {{$topic->content}}
-                            </textarea>
+                                      id="create_content">{{$topic->content}}</textarea>
                         </div>
                         <div class="form-group col-lg-6 col-sm-12 col-xs-12">
                             <label for="parse">parse</label>
@@ -54,7 +52,8 @@
                                 <img id="img" style="height: 80px"
                                      src="{{empty($topic->image)?'/image/default_img.jpeg':env('IMG_PREFIX').$topic->image}}"
                                      alt="...">
-                                <input type="hidden" name="image" id="img_hidden" value="{{empty($topic->image)?'':$topic->image}}">
+                                <input type="hidden" name="image" id="img_hidden"
+                                       value="{{empty($topic->image)?'':$topic->image}}">
 
                             </div>
                             <div class="col-lg-6">
