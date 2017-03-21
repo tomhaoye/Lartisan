@@ -54,7 +54,7 @@
                                 <img id="img" style="height: 80px"
                                      src="{{empty($topic->image)?'/image/default_img.jpeg':env('IMG_PREFIX').$topic->image}}"
                                      alt="...">
-                                <input type="hidden" name="image" id="img_hidden" value="{{empty($topic->image)?'':env('IMG_PREFIX').$topic->image}}">
+                                <input type="hidden" name="image" id="img_hidden" value="{{empty($topic->image)?'':$topic->image}}">
 
                             </div>
                             <div class="col-lg-6">

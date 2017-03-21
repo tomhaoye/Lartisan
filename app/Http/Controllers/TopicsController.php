@@ -56,21 +56,27 @@ class TopicsController extends Controller
         $data = $request->only(array('title', 'content', 'type_id', 'sort_id', 'image'));
         $data['user_id'] = Auth::user()->id;
         $topic = Topics::create($data);
-        return redirect('/topic/' . $topic->id);
+        return redirect(route('topic.show', $topic->id));
     }
 
     public function edit($id)
     {
         $uptoken = \QiniuHelper::qiniuToken();
         $topic = Topics::findOrfail($id);
+        $this->authorize('update', $topic);
         $sort = TopicsSort::all();
         $type = TopicsType::all();
         return view('topics.edit', compact('topic', 'type', 'sort', 'uptoken'));
     }
 
-    public function update($id)
+    public function update($id, Request $request)
     {
+        $topic = Topics::findOrfail($id);
+        $this->authorize('update', $topic);
 
+        $data = $request->only(array('title', 'content', 'type_id', 'sort_id', 'image'));
+        $topic->update($data);
+        return redirect(route('topic.show', $topic->id));
     }
 
     public function destroy($id)
