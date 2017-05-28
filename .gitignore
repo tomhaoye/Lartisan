@@ -6,3 +6,5 @@
 /public/js
 /public/css
 /public/.htaccess
+_ide_helper.php
+.idea

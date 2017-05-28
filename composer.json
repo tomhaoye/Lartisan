@@ -16,7 +16,8 @@
         "mews/purifier": "^2.0",
         "intervention/image": "^2.3",
         "zgldh/qiniu-laravel-storage": "^0.4.3",
-        "Codeception/Codeception": "^2.2"
+        "Codeception/Codeception": "^2.2",
+        "predis/predis": "^1.1"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
