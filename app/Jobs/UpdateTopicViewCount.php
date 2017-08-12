@@ -16,6 +16,7 @@ class UpdateTopicViewCount extends Job implements ShouldQueue
 
     /**
      * UpdateTopicViewCount constructor.
+     * 
      * @param Topics $topic
      */
     public function __construct(Topics $topic)
