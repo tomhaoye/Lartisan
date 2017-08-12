@@ -35,4 +35,9 @@ class Topics extends Model
     {
         return $this->hasMany('App\Models\Comments', 'topic_id', 'id');
     }
+
+    public function updateViewCount()
+    {
+        $this->increment('view_count');
+    }
 }

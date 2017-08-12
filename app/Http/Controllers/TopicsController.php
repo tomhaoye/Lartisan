@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Jobs\UpdateTopicViewCount;
 use App\Models\Topics;
 use App\Models\TopicsSort;
 use App\Models\TopicsType;
@@ -39,6 +40,7 @@ class TopicsController extends Controller
         foreach ($topic->comments as $comment) {
             $comment->content = $markdown->text($comment->content);
         }
+        $this->dispatch(new UpdateTopicViewCount($topic));
         return view('topics.show', compact('topic'));
     }
 
