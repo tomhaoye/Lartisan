@@ -28,6 +28,10 @@ class UpdateTopicViewCount extends Job implements ShouldQueue
      */
     public function handle()
     {
+        if ($this->attempts() > 1) {
+            $this->release(10);
+        }
         $this->topic->updateViewCount();
     }
+
 }

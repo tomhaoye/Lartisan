@@ -40,7 +40,7 @@ class TopicsController extends Controller
         foreach ($topic->comments as $comment) {
             $comment->content = $markdown->text($comment->content);
         }
-        $this->dispatch(new UpdateTopicViewCount($topic));
+        $this->dispatch((new UpdateTopicViewCount($topic)));
         return view('topics.show', compact('topic'));
     }
 
