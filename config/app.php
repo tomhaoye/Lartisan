@@ -165,6 +165,8 @@ return [
 
         //dev
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
+
+        Sentry\SentryLaravel\SentryLaravelServiceProvider::class,
     ],
 
     /*
@@ -216,6 +218,8 @@ return [
         'Toastr' => Yuansir\Toastr\Facades\Toastr::class,
         'Purifier' => Mews\Purifier\Facades\Purifier::class,
         'Image' => Intervention\Image\Facades\Image::class,
+
+        'Sentry' => Sentry\SentryLaravel\SentryFacade::class,
     ],
 
 ];

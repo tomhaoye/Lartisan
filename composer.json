@@ -17,7 +17,8 @@
         "intervention/image": "^2.3",
         "zgldh/qiniu-laravel-storage": "^0.4.3",
         "Codeception/Codeception": "^2.2",
-        "predis/predis": "^1.1"
+        "predis/predis": "^1.1",
+        "sentry/sentry-laravel": "^0.8.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
